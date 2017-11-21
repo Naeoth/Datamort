@@ -1,0 +1,72 @@
+{
+  "options": {
+    "cache-config": true,
+    "merge-default-rules": false
+  },
+  "files": {
+    "ignore": "src/stylesheets/scss/vendor/*.s+(a|c)ss"
+  },
+  "rules": {
+    "empty-line-between-blocks": 1,
+    "no-color-keywords": 1,
+    "no-color-literals": 1,
+    "no-combinators": 1,
+    "no-duplicate-properties": 1,
+    "no-empty-rulesets": 1,
+    "no-important": 1,
+    "no-invalid-hex": 2,
+    "no-mergeable-selectors": 1,
+    "no-misspelled-properties": 2,
+    "no-qualifying-elements": [1, {
+      "allow-element-with-id": true
+    }],
+    "no-universal-selectors": 1,
+    "no-url-protocols": 1,
+    "no-vendor-prefixes": 1,
+    "property-units": [1, { 
+      "global": ["px", "em", "rem" ,"vh", "vw", "s"],
+      "per-property": {
+        "width": ["em", "rem", "vw"],
+        "height": ["em", "rem", "vh"],
+        "margin": ["rem"],
+        "padding": ["rem"],
+        "font-size": ["px", "rem"],
+        "line-height": [],
+        "animation": ["s"]
+      }
+    }],
+    "force-attribute-nesting": 1,
+    "force-element-nesting": 1,
+    "force-pseudo-nesting": 1,
+    "class-name-format": [1, {
+      "allow-leading-underscore": false,
+      "convention": "hyphenatedbem"
+    }],
+    "function-name-format": [1, {
+      "allow-leading-underscore": false
+    }],
+    "id-name-format": [1, {
+      "allow-leading-underscore": false
+    }],
+    "mixin-name-format": [1, {
+      "allow-leading-underscore": false
+    }],
+    "variable-name-format": [1, {
+      "allow-leading-underscore": false
+    }],
+    "attribute-quotes": 1,
+    "bem-depth": [1, {
+      "max-depth": 3
+    }],
+    "border-zero": 1,
+    "brace-style": [1, [{
+      "style": "stroustrup"
+    }]],
+    "clean-import-paths": 1,
+    "empty-args": 1,
+    "url-quotes": 1,
+    "shorthand-values": 1,
+    "space-between-parens": 1,
+    "space-around-operator": 1
+  }
+}

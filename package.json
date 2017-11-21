@@ -1,0 +1,40 @@
+{
+  "name": "datamort",
+  "version": "1.0.0",
+  "description": "Hyblab 2017 - Espérance de vie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul BIVIC, Alexis BUSSENEAU, Martin DUMAS PRIMBAULT, Mathieu LOCHET, Arnaud MAHÉ, Pareja NINA, Morgane TESSIER, Landry TREBON",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-preset-es2015": "latest",
+    "babelify": "latest",
+    "browserify": "latest",
+    "gulp": "latest",
+    "gulp-beautify": "latest",
+    "gulp-cached": "latest",
+    "gulp-clean": "latest",
+    "gulp-connect": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-html-beautify": "latest",
+    "gulp-html-minify": "latest",
+    "gulp-html-replace": "latest",
+    "gulp-htmlhint": "latest",
+    "gulp-purify-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-rewrite-css": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-lint": "latest",
+    "gulp-semi": "latest",
+    "gulp-uglify": "latest",
+    "vinyl-source-stream": "latest"
+  },
+  "dependencies": {
+    "d3": "latest",
+    "normalize.css": "latest"
+  }
+}
