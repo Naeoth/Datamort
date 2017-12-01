@@ -4,7 +4,7 @@
   "description": "Hyblab 2017 - Espérance de vie",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/gulp/bin/gulp.js"
   },
   "author": "Paul BIVIC, Alexis BUSSENEAU, Martin DUMAS PRIMBAULT, Mathieu LOCHET, Arnaud MAHÉ, Pareja NINA, Morgane TESSIER, Landry TREBON",
   "license": "ISC",
