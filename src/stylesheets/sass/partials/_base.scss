@@ -55,7 +55,7 @@ body {
     right: -10px;
     left: -10px;
 
-    height: 12px;
+    height: 15px;
 
     content: '';
 
@@ -63,13 +63,11 @@ body {
   }
 }
 
-button.link {
+a.link {
   font-family: $saira;
   font-size: 1.4em;
 
   display: inline-block;
-  border: none;
-  background: none;
 
   text-decoration: none;
   letter-spacing: 2px;

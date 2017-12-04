@@ -1,29 +1,31 @@
-.content,
-.header {
-  width: 600px;
-  margin: 0 auto;
-}
+#home {
+  .content-container {
+    width: 600px;
 
-.header_title {
-  font-size: 3.5em;
-
-  margin: 0;
-  margin-bottom: 100px;
-
-  text-align: center;
-  letter-spacing: 2px;
-
-  .highlighted {
-    font-size: .7em;
+    background-color: green;
   }
-}
 
-.content {
-  font-size: 1.4em;
+  .title-container {
+    width: 400px;
+    padding: 20px;
 
-  text-align: justify;
-}
+    text-transform: uppercase;
+  }
 
-.link {
-  margin-top: 100px;
+  .title {
+    p {
+      font-size: 3em;
+      line-height: .9em;
+
+      margin: 0;
+      margin-top: 80px;
+    }
+
+    span {
+      font-size: 1.5em;
+      line-height: 1.3em;
+
+      margin-left: 10px;
+    }
+  }
 }
