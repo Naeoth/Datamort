@@ -3,3 +3,22 @@
   width: 50%;
   margin: 0 auto;
 }
+
+.header_title {
+  font-size: 3.5em;
+
+  margin: 0;
+
+  text-align: center;
+  letter-spacing: 2px;
+
+  .highlighted {
+    font-size: .7em;
+  }
+}
+
+.content {
+  font-size: 1.4em;
+
+  text-align: justify;
+}

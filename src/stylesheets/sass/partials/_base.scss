@@ -4,13 +4,21 @@ body {
 }
 
 #datamort {
+  font-family: $roboto;
+
   position: relative;
 
   width: 100%;
   min-height: 100vh;
 
+  letter-spacing: 1px;
+
   color: $white;
   background-color: $black;
+
+  .saira {
+    font-family: $saira;
+  }
 }
 
 .highlighted {
@@ -20,8 +28,8 @@ body {
   &::after {
     position: absolute;
     z-index: -1;
+    top: 65%;
     right: -10px;
-    bottom: 0;
     left: -10px;
 
     height: 12px;
@@ -30,4 +38,16 @@ body {
 
     background-color: $red;
   }
+}
+
+a.link {
+  font-family: $saira;
+  font-size: 1.4em;
+
+  display: inline-block;
+
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  color: $white;
 }
