@@ -424,7 +424,7 @@ body {
     top: 65%;
     right: -10px;
     left: -10px;
-    height: 12px;
+    height: 15px;
     content: '';
     background-color: #ec2323; }
 
@@ -436,39 +436,22 @@ a.link {
   letter-spacing: 2px;
   color: #fffefe; }
 
-.content,
-.header {
+#home .content-container {
   width: 600px;
-  margin: 0 auto; }
-
-.header_title {
-  font-size: 3.5em;
-  margin: 0;
-  margin-bottom: 100px;
-  text-align: center;
-  letter-spacing: 2px; }
-  .header_title .highlighted {
-    font-size: .7em; }
-
-.content {
-  font-size: 1.4em;
-  text-align: center; }
-  .content p {
-    text-align: justify; }
-
-.link {
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 100px; }
-
-.right,
-.left {
-  height: 200px; }
-
-.right {
-  width: 700px;
   background-color: green; }
 
-.left {
-  width: 500px;
-  background-color: blue; }
+#home .title-container {
+  width: 400px;
+  padding: 20px;
+  text-transform: uppercase; }
+
+#home .title p {
+  font-size: 3em;
+  line-height: .9em;
+  margin: 0;
+  margin-top: 80px; }
+
+#home .title span {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-left: 10px; }
