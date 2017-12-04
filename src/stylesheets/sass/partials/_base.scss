@@ -99,6 +99,8 @@ button.link {
   border: none;
   background: none;
 
+  padding: 0;
+
   &:hover {
     &::after {
       top: -5px;
