@@ -404,6 +404,17 @@ body {
   #datamort .saira {
     font-family: "Saira Extra Condensed", sans-serif; }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .flex-container.full-height {
+    min-height: 100vh; }
+
+.flex-item {
+  align-self: center; }
+
 .highlighted {
   position: relative;
   z-index: 9999; }
@@ -427,12 +438,13 @@ a.link {
 
 .content,
 .header {
-  width: 50%;
+  width: 600px;
   margin: 0 auto; }
 
 .header_title {
   font-size: 3.5em;
   margin: 0;
+  margin-bottom: 100px;
   text-align: center;
   letter-spacing: 2px; }
   .header_title .highlighted {
@@ -440,4 +452,23 @@ a.link {
 
 .content {
   font-size: 1.4em;
-  text-align: justify; }
+  text-align: center; }
+  .content p {
+    text-align: justify; }
+
+.link {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 100px; }
+
+.right,
+.left {
+  height: 200px; }
+
+.right {
+  width: 700px;
+  background-color: green; }
+
+.left {
+  width: 500px;
+  background-color: blue; }

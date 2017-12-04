@@ -21,9 +21,28 @@ body {
   }
 }
 
-.container {
+
+// PARTIE FLEX
+
+.flex-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &.full-height {
+    min-height: 100vh;
+  }
+}
+
+.flex-item {
   align-self: center;
 }
+
+// ===========
+
+
 
 .highlighted {
   position: relative;
