@@ -82,7 +82,7 @@ gulp.task('cleanJS', () => {
 
 gulp.task('compileJS', ['cleanJS'], () => {
   return browserify("src/scripts/modules/index.js")
-    .transform('babelify', { presets: ['env'] })
+    .transform('babelify', { presets: ['es2015'] })
     .bundle()
     .pipe(source("main.js"))
     .pipe(gulp.dest("src/scripts"))
