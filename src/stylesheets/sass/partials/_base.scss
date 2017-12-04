@@ -62,6 +62,23 @@ body {
     background-color: $red;
   }
 }
+.redlight {
+
+  background-color: $red;
+}
+.header_title {
+  font-size: 3.5em;
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  text-align: center;
+  letter-spacing: 2px;
+
+  .highlighted {
+    font-size: .7em;
+  }
+}
 
 button.link {
   font-family: $saira;
