@@ -1,39 +1,20 @@
 new Chart(document.getElementById("mixed-chart"), {
-  type: 'bar',
+  type: 'horizontalBar',
   data: {
-    labels: ["1900", "1950", "1999", "2050"],
+    labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
     datasets: [{
-      label: "Europe",
-      type: "line",
-      borderColor: "#8e5ea2",
-      data: [408, 547, 675, 734],
-      fill: false
-    }, {
-      label: "Africa",
-      type: "line",
-      borderColor: "#3e95cd",
-      data: [133, 221, 783, 2478],
-      fill: false
-    }, {
-      label: "Europe",
-      type: "bar",
-      backgroundColor: "rgba(0,0,0,0.2)",
-      data: [408, 547, 675, 734],
-    }, {
-      label: "Africa",
-      type: "bar",
-      backgroundColor: "rgba(0,0,0,0.2)",
-      backgroundColorHover: "#3e95cd",
-      data: [133, 221, 783, 2478]
+      label: "Population (millions)",
+      backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+      data: [2478, 5267, 734, 784, 433]
     }]
   },
   options: {
-    title: {
-      display: true,
-      text: 'Population growth (millions): Europe & Africa'
-    },
     legend: {
       display: false
+    },
+    title: {
+      display: true,
+      text: 'Predicted world population (millions) in 2050'
     }
   }
 })
