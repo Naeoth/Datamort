@@ -389,6 +389,12 @@ template {
 [hidden] {
   display: none; }
 
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 html,
 body {
   margin: 0; }
@@ -414,6 +420,10 @@ body {
 
 .flex-item {
   align-self: center; }
+
+.center {
+  margin-right: auto;
+  margin-left: auto; }
 
 .text-input,
 .select-input {
@@ -449,6 +459,10 @@ body {
     height: 160px;
     content: '';
     background-color: #ec2323; }
+  .select-input img {
+    float: right;
+    width: 40px;
+    margin-top: 6px; }
 
 .hideScrollbar {
   overflow: hidden;
@@ -502,8 +516,7 @@ body {
 
 .header_title {
   font-size: 3.5em;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   text-align: center;
   letter-spacing: 2px; }
   .header_title .highlighted {
@@ -513,15 +526,23 @@ button.link {
   font-family: "Saira Extra Condensed", sans-serif;
   font-size: 1.4em;
   display: inline-block;
+  padding: 0;
   text-decoration: none;
   letter-spacing: 2px;
   color: #fffefe;
   border: none;
   background: none; }
+  button.link:hover::after {
+    top: -5px;
+    height: 36px; }
+
+.page {
+  display: none; }
 
 #home .content-container {
+  position: relative;
   width: 600px;
-  height: 500px;
+  height: 600px;
   padding: 20px; }
 
 #home .title-container {
@@ -547,6 +568,15 @@ button.link {
 
 #home .form-icons {
   width: 100px; }
+
+#home .validateForm {
+  font-size: 2em;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0; }
+  #home .validateForm:hover::after {
+    top: -5px;
+    height: 43px; }
 
 .title {
   font-size: 2.5em;

@@ -1,7 +1,9 @@
 #home {
   .content-container {
+    position: relative;
+
     width: 600px;
-    height: 500px;
+    height: 600px;
     padding: 20px;
   }
 
@@ -38,5 +40,21 @@
 
   .form-icons {
     width: 100px;
+  }
+
+  .validateForm {
+    font-size: 2em;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: 0;
+
+    &:hover {
+      &::after {
+        top: -5px;
+
+        height: 43px;
+      }
+    }
   }
 }

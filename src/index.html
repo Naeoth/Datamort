@@ -27,28 +27,49 @@
 <body>
   <main id="datamort">
 
-    <section id="home" class="flex-container full-height">
+    <section id="home" class="flex-container full-height page">
       <article class="flex-item">
         <header class="header">
           <h1 class="header_title saira">
-            <span class="highlighted">DE QUOI RISQUEZ-VOUS DE MOURRIR...</span> <br> SI VOUS MOURRIEZ DEMAIN ?
+            <span class="highlighted">1 FRANÇAIS·E MEURT TOUTES LES 54 SECONDES</span> <br> ET SI C'ETAIT VOUS ?
           </h1>
         </header>
 
-        <p class="content-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="content-container center">Vous êtes un homme, vous habitez Strasbourg <br> et vous avez 58 ans ? C’est un cancer qui <br> vous emportera. <br> Mais si vous êtes une femme, habitant à Toulouse et âgée de 77 ans, c’est une maladie du système nerveux qui vous emmènera au
+          paradis.
+        </p>
 
         <nav class="flex-container">
-          <button onclick="openPage(event, 'search')" class="link highlighted">Aller plus loin</button>
+          <button onclick="openPage(event, 'search')" class="link highlighted center">Avec Datamort, simulez votre propre mort...</button>
         </nav>
       </article>
     </section>
+
+    <section id="search" class="flex-container full-height page">
+      <article class="flex-item">
+        <p class="content-container">S'il devait mourir demain, un homme strasbourgeois de 58 ans a toutes les chances de mourir d’un cancer du poumon. Une seule personne est morte du SIDA à Lille en 2014 contre treize à Marseille. Et vous, souhaitez-vous savoir de quoi vous allez
+          mourir si vous deviez mourir demain ?</p>
+      </article>
+    </section>
+
+    <script>
+      function openPage(event, page) {
+        let pages = document.getElementsByClassName("page")
+        for (let i = 0; i < pages.length; i++)
+          pages[i].style.display = "none"
+
+        console.log(document.getElementById(page).style.display)
+        document.getElementById(page).style.display = "flex"
+      }
+
+      openPage(null, "home")
+    </script>
 
   </main>
 
   <!-- Scripts -->
   <!-- build:js scripts/main.min.js -->
-  <script src="scripts/main.js"></script>
+  <!--  <script src="scripts/main.js"></script> -->
   <!-- endbuild -->
 </body>
 

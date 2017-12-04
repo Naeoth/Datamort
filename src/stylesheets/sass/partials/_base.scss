@@ -40,7 +40,11 @@ body {
   align-self: center;
 }
 
-// ===========
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 .text-input,
 .select-input {
@@ -91,6 +95,13 @@ body {
     content: '';
 
     background-color: $red;
+  }
+
+  img {
+    float: right;
+
+    width: 40px;
+    margin-top: 6px;
   }
 }
 .hideScrollbar {
@@ -163,11 +174,11 @@ body {
 .redlight {
   background-color: $red;
 }
+
 .header_title {
   font-size: 3.5em;
 
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 
   text-align: center;
   letter-spacing: 2px;
@@ -183,10 +194,24 @@ button.link {
 
   display: inline-block;
 
+  padding: 0;
+
   text-decoration: none;
   letter-spacing: 2px;
 
   color: $white;
   border: none;
   background: none;
+
+  &:hover {
+    &::after {
+      top: -5px;
+
+      height: 36px;
+    }
+  }
+}
+
+.page {
+  display: none;
 }
