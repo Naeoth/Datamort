@@ -48,7 +48,8 @@ body {
 // ===========
 
 .content-container {
-  text-align: justify;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .highlighted {
@@ -92,14 +93,14 @@ button.link {
 
   display: inline-block;
 
+  padding: 0;
+
   text-decoration: none;
   letter-spacing: 2px;
 
   color: $white;
   border: none;
   background: none;
-
-  padding: 0;
 
   &:hover {
     &::after {
