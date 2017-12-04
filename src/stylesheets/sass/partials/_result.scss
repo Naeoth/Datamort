@@ -1,0 +1,68 @@
+
+.title {
+  font-size: 2.5em;
+  font-weight: 500;
+
+  position: relative;
+
+  margin: 0;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  span {
+    line-height: .5em;
+  }
+
+  .cache1,
+  .cache2,
+  .cache3,
+  .cache4 {
+    position: absolute;
+
+    width: 500px;
+    height: 10px;
+
+    background-color: blue;
+  }
+  .cache1 {
+    top: -9px;
+  }
+  .cache2 {
+    top: 42px;
+
+    height: 6px;
+  }
+  .cache3 {
+    top: 88px;
+
+    height: 6px;
+  }
+  .cache4 {
+    top: 133px;
+
+    height: 15px;
+  }
+}
+.title-container {
+  width: 300px;
+}
+
+.right,
+.left {
+  height: 500px;
+}
+
+.right {
+  width: 500px;
+  padding: 20px;
+
+  background-color: green;
+}
+
+.left {
+  width: 500px;
+  padding: 20px;
+
+  background-color: blue;
+}

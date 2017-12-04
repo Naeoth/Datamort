@@ -43,31 +43,40 @@
           dolorunt. zlvhcnozvicn zioaczofecnza zeoicjziaod zoidzx azioeaz daz daizd azd aziod caz.
         </p>
 
-        <form class="form">
-          <p class="input-container">
-            <span class="highlighted">
+        <div class="flex-container">
+          <div class="form-icons flex-item">
+
+          </div>
+
+          <form class="form flex-item">
+            <p class="input-container">
+              <span class="highlighted">
               <input type="text" class="text-input saira" placeholder="Définissez votre âge">
             </span>
-          </p>
+            </p>
 
-          <p class="input-container">
-            <p class="select-input highlighted saira">Définissez votre ville</p>
-            <ul class="select-options">
-              <li class="select-option" data-value="1">Rennes</li>
-              <li class="select-option" data-value="2">Paris</li>
-              <li class="select-option" data-value="3">Lille</li>
-              <li class="select-option" data-value="4">Nantes</li>
-              <li class="select-option" data-value="5">Rennes</li>
-              <li class="select-option" data-value="6">Paris</li>
-              <li class="select-option" data-value="7">Lille</li>
-              <li class="select-option" data-value="8">Nantes</li>
-              <li class="select-option" data-value="9">Paris</li>
-              <li class="select-option" data-value="10">Lille</li>
-              <li class="select-option" data-value="11">Nantes</li>
-            </ul>
-          </p>
+            <div class="input-container select-container hide">
+              <p class="select-input highlighted saira hide">Définissez votre ville</p>
+              <div class="hideScrollbar">
+                <ul class="select-options city">
+                  <li class="select-option" data-value="1">Rennes</li>
+                  <li class="select-option" data-value="2">Paris</li>
+                  <li class="select-option" data-value="3">Lille</li>
+                  <li class="select-option" data-value="4">Nantes</li>
+                  <li class="select-option" data-value="5">Rennes</li>
+                  <li class="select-option" data-value="6">Paris</li>
+                  <li class="select-option" data-value="7">Lille</li>
+                  <li class="select-option" data-value="8">Nantes</li>
+                  <li class="select-option" data-value="9">Paris</li>
+                  <li class="select-option" data-value="10">Lille</li>
+                  <li class="select-option" data-value="11">Nantes</li>
+                </ul>
+              </div>
+            </div>
 
-        </form>
+            <button href="#" class="link highlighted">Valider</button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -77,6 +86,7 @@
 <!-- Scripts -->
 <!-- build:js scripts/main.min.js -->
 <script src="scripts/main.js"></script>
+<script src="scripts/modules/select-input.js"></script>
 <!-- endbuild -->
 
 </html>

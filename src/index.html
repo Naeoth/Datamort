@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <!-- TODO -->
   <meta name="keywords" content="">
-  <meta name="author" content="Paul BIVIC, Alexis BUSSENEAU, Martin DUMAS PRIMBAULT, Mathieu LOCHET, Arnaud MAHÉ, Pareja NINA, Morgane TESSIER, Landry TREBON">
+  <meta name="author" content="Paul BIVIC, Alexis BUSSENEAU, Martin DUMAS PRIMBAULT, Mathieu LOCHET, Arnaud MAHÉ, Nina PAREJA, Morgane TESSIER, Landry TREBON">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Styles -->
@@ -25,33 +25,31 @@
 <!-- Body -->
 
 <body>
-  <div id="datamort">
+  <main id="datamort">
 
-    <div id="home" class="flex-container full-height">
-      <div class="flex-item">
+    <section id="home" class="flex-container full-height">
+      <article class="flex-item">
         <header class="header">
           <h1 class="header_title saira">
             <span class="highlighted">DE QUOI RISQUEZ-VOUS DE MOURRIR...</span> <br> SI VOUS MOURRIEZ DEMAIN ?
           </h1>
         </header>
 
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. a.content</p>
+        <p class="content-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+        <nav class="flex-container">
+          <button onclick="openPage(event, 'search')" class="link highlighted">Aller plus loin</button>
+        </nav>
+      </article>
+    </section>
 
-          <a href="#" class="link highlighted">Aller plus loin</a>
-        </div>
+  </main>
 
-      </div>
-    </div>
-
-  </div>
+  <!-- Scripts -->
+  <!-- build:js scripts/main.min.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 </body>
-
-<!-- Scripts -->
-<!-- build:js scripts/main.min.js -->
-<script src="scripts/main.js"></script>
-<!-- endbuild -->
 
 </html>

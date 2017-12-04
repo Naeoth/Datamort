@@ -430,25 +430,40 @@ body {
   .select-input::placeholder {
     color: #fffefe; }
 
+.select-container.hide .select-input::before {
+  display: none; }
+
+.select-container.hide .select-options {
+  display: none; }
+
 .select-input {
   margin: 0;
   cursor: pointer;
   user-select: none; }
+  .select-input::before {
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    display: block;
+    width: 5px;
+    height: 160px;
+    content: '';
+    background-color: #ec2323; }
+
+.hideScrollbar {
+  overflow: hidden;
+  width: 300px; }
 
 .select-options {
   position: relative;
-  width: 300px;
+  display: block;
+  overflow: auto;
+  width: 100%;
+  max-height: 150px;
   margin: 0;
-  padding-top: 10px;
+  margin-top: 10px;
+  padding-right: 20px;
   padding-left: 0; }
-  .select-options::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -10px;
-    width: 5px;
-    content: '';
-    background-color: #ec2323; }
 
 .select-option {
   font-family: "Saira Extra Condensed", sans-serif;
@@ -482,13 +497,27 @@ body {
     content: '';
     background-color: #ec2323; }
 
-a.link {
+.redlight {
+  background-color: #ec2323; }
+
+.header_title {
+  font-size: 3.5em;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px; }
+  .header_title .highlighted {
+    font-size: .7em; }
+
+button.link {
   font-family: "Saira Extra Condensed", sans-serif;
   font-size: 1.4em;
   display: inline-block;
   text-decoration: none;
   letter-spacing: 2px;
-  color: #fffefe; }
+  color: #fffefe;
+  border: none;
+  background: none; }
 
 #home .content-container {
   width: 600px;
@@ -515,3 +544,52 @@ a.link {
   font-size: 1.3em;
   line-height: 1.3em;
   text-align: justify; }
+
+#home .form-icons {
+  width: 100px; }
+
+.title {
+  font-size: 2.5em;
+  font-weight: 500;
+  position: relative;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+  .title span {
+    line-height: .5em; }
+  .title .cache1,
+  .title .cache2,
+  .title .cache3,
+  .title .cache4 {
+    position: absolute;
+    width: 500px;
+    height: 10px;
+    background-color: blue; }
+  .title .cache1 {
+    top: -9px; }
+  .title .cache2 {
+    top: 42px;
+    height: 6px; }
+  .title .cache3 {
+    top: 88px;
+    height: 6px; }
+  .title .cache4 {
+    top: 133px;
+    height: 15px; }
+
+.title-container {
+  width: 300px; }
+
+.right,
+.left {
+  height: 500px; }
+
+.right {
+  width: 500px;
+  padding: 20px;
+  background-color: green; }
+
+.left {
+  width: 500px;
+  padding: 20px;
+  background-color: blue; }
