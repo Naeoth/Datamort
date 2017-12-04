@@ -1,3 +1,33 @@
-html {
+html,
+body {
+  margin: 0;
+}
+
+#datamort {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  color: $white;
   background-color: $black;
+}
+
+.highlighted {
+  position: relative;
+  z-index: 9999;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    right: -10px;
+    bottom: 0;
+    left: -10px;
+
+    height: 12px;
+
+    content: '';
+
+    background-color: $red;
+  }
 }
