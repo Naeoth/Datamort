@@ -42,7 +42,83 @@ body {
 
 // ===========
 
+.text-input,
+.select-input {
+  font-size: 2em;
 
+  width: 300px;
+
+  color: $white;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+
+  appearance: none;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.select-input {
+  margin: 0;
+
+  cursor: pointer;
+  user-select: none;
+}
+.select-options {
+  position: relative;
+
+  width: 300px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+
+    width: 5px;
+
+    content: '';
+
+    background-color: $red;
+  }
+}
+.select-option {
+  font-family: $saira;
+  font-size: 1.5em;
+
+  position: relative;
+
+  list-style: none;
+
+  cursor: pointer;;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    content: '';
+
+    background-color: $white;
+  }
+
+  &:hover {
+    color: $red;
+    &::after {
+      background-color: $red;
+    }
+  }
+}
 
 .highlighted {
   position: relative;

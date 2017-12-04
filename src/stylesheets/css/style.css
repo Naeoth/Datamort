@@ -415,6 +415,60 @@ body {
 .flex-item {
   align-self: center; }
 
+.text-input,
+.select-input {
+  font-size: 2em;
+  width: 300px;
+  color: #fffefe;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  appearance: none; }
+  .text-input::placeholder,
+  .select-input::placeholder {
+    color: #fffefe; }
+
+.select-input {
+  margin: 0;
+  cursor: pointer;
+  user-select: none; }
+
+.select-options {
+  position: relative;
+  width: 300px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0; }
+  .select-options::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 5px;
+    content: '';
+    background-color: #ec2323; }
+
+.select-option {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 1.5em;
+  position: relative;
+  list-style: none;
+  cursor: pointer; }
+  .select-option::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    content: '';
+    background-color: #fffefe; }
+  .select-option:hover {
+    color: #ec2323; }
+    .select-option:hover::after {
+      background-color: #ec2323; }
+
 .highlighted {
   position: relative;
   z-index: 9999; }
@@ -438,7 +492,8 @@ a.link {
 
 #home .content-container {
   width: 600px;
-  background-color: green; }
+  height: 500px;
+  padding: 20px; }
 
 #home .title-container {
   width: 400px;
@@ -455,3 +510,8 @@ a.link {
   font-size: 1.5em;
   line-height: 1.3em;
   margin-left: 10px; }
+
+#home .present {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-align: justify; }

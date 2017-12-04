@@ -1,8 +1,8 @@
 #home {
   .content-container {
     width: 600px;
-
-    background-color: green;
+    height: 500px;
+    padding: 20px;
   }
 
   .title-container {
@@ -27,5 +27,12 @@
 
       margin-left: 10px;
     }
+  }
+
+  .present {
+    font-size: 1.3em;
+    line-height: 1.3em;
+
+    text-align: justify;
   }
 }
