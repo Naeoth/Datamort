@@ -21,6 +21,10 @@ body {
   }
 }
 
+.container {
+  align-self: center;
+}
+
 .highlighted {
   position: relative;
   z-index: 9999;

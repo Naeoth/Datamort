@@ -1,6 +1,14 @@
+.flex {
+  display: flex;
+
+  min-height: 100vh;
+
+  justify-content: center;
+}
+
 .content,
 .header {
-  width: 50%;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -8,6 +16,7 @@
   font-size: 3.5em;
 
   margin: 0;
+  margin-bottom: 100px;
 
   text-align: center;
   letter-spacing: 2px;
@@ -20,5 +29,16 @@
 .content {
   font-size: 1.4em;
 
-  text-align: justify;
+  text-align: center;
+
+  p {
+    text-align: justify;
+  }
+}
+
+.link {
+  display: inline-block;
+
+  margin: 0 auto;
+  margin-top: 100px;
 }
