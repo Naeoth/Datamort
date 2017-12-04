@@ -20,6 +20,8 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:500|Saira+Extra+Condensed:400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500" rel="stylesheet">
+
 </head>
 
 <!-- Body -->
@@ -35,17 +37,14 @@
     <div id="result" class="flex-container ">
       <div class="left flex-item">
         <div class="title-container">
-          <h2 class=" title saira">
-            <div class="cache1"></div>
-            <div class="cache2"></div>
-            <div class="cache3"></div>
-            <div class="cache4"></div>
-            <span class="redlight">D'une maladie infectieuse et parasitaire</span>
-          </h2>
+            <h2 class=" title ">
+              <span class="redlight">  D'une maladie infectieuse et parasitaire </span>
+            </h2>
         </div>
       </div>
 
       <div class="right flex-item">
+        <canvas id="mixed-chart" width="800" height="450"></canvas>
 
       </div>
     </div>
@@ -55,7 +54,10 @@
 
 <!-- Scripts -->
 <!-- build:js scripts/main.min.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/modules/chart.js"></script>
+
 <!-- endbuild -->
 
 </html>
