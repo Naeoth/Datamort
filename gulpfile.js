@@ -32,10 +32,10 @@ const htmlReplace = require('gulp-html-replace')    // Replaces tag in HTML
 gulp.task('cleanHTML', () => {
   return gulp.src("src/*.html", { base: "." })
     .pipe(cache('HTML'))
-    //.pipe(htmlBeautify({ indent_size: 2 }))
+    .pipe(htmlBeautify({ indent_size: 2 }))
     .pipe(htmlLint('.html-lint.json'))
     .pipe(htmlLint.reporter())
-    //.pipe(gulp.dest("."))
+    .pipe(gulp.dest("."))
     .pipe(connect.reload())
 })
 
