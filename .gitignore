@@ -1,2 +1,3 @@
 node_modules
-src/stylsheets/css
+src/stylesheets/css
+src/scripts/main.js
