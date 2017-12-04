@@ -1,2 +1,9 @@
-@import 'partials/variables';
-@import 'partials/global';
+@charset 'UTF-8';
+
+//Modules
+@import 'modules/color';
+@import 'modules/typography';
+
+// Partials
+@import 'partials/base';
+@import 'partials/home';
