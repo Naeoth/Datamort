@@ -68,6 +68,7 @@ button.link {
   font-size: 1.4em;
 
   display: inline-block;
+  //padding: 0 10px;
 
   text-decoration: none;
   letter-spacing: 2px;
@@ -75,4 +76,17 @@ button.link {
   color: $white;
   border: none;
   background: none;
+
+  &:hover {
+    //background-color: $red;
+    &::after {
+      top: -5px;
+
+      height: 37px;
+    }
+  }
+}
+
+.page {
+  display: none;
 }
