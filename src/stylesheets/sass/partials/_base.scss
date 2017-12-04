@@ -80,7 +80,7 @@ body {
   }
 }
 
-a.link {
+button.link {
   font-family: $saira;
   font-size: 1.4em;
 
@@ -90,4 +90,6 @@ a.link {
   letter-spacing: 2px;
 
   color: $white;
+  border: none;
+  background: none;
 }
