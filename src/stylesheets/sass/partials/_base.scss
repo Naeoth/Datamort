@@ -40,9 +40,16 @@ body {
   align-self: center;
 }
 
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 // ===========
 
-
+.content-container {
+  text-align: justify;
+}
 
 .highlighted {
   position: relative;
@@ -63,14 +70,13 @@ body {
   }
 }
 .redlight {
-
   background-color: $red;
 }
+
 .header_title {
   font-size: 3.5em;
 
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 
   text-align: center;
   letter-spacing: 2px;
@@ -85,7 +91,6 @@ button.link {
   font-size: 1.4em;
 
   display: inline-block;
-  //padding: 0 10px;
 
   text-decoration: none;
   letter-spacing: 2px;
@@ -95,7 +100,6 @@ button.link {
   background: none;
 
   &:hover {
-    //background-color: $red;
     &::after {
       top: -5px;
 
