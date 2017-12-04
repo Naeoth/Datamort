@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xml:space="preserve"
+   enable-background="new 0 0 127.272 402.019"
+   viewBox="0 0 127.272 402.019"
+   height="402.019px"
+   width="127.272px"
+   y="0px"
+   x="0px"
+   id="Calque_1"
+   version="1.1"><metadata
+     id="metadata11"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs9" /><path
+     id="path2"
+     d="M65.598,116.126c30.32,0,54.984-24.668,54.984-54.988c0-30.321-24.664-54.989-54.984-54.989  c-30.324,0-54.992,24.668-54.992,54.989C10.605,91.458,35.273,116.126,65.598,116.126L65.598,116.126z M65.598,116.126" /><path
+     id="path4"
+     d="M124.797,129.907L6.531,129.868L6.477,313.954l-0.078,0.481H32.52v84.863h66.152v-84.863h26.121L124.797,129.907z   M124.797,129.907" /></svg>

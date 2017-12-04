@@ -395,10 +395,7 @@ template {
   to {
     opacity: 1; } }
 
-html,
-body {
-  margin: 0; }
-
+/* ----- GLOBAL ----- */
 #datamort {
   font-family: "Roboto", sans-serif;
   position: relative;
@@ -407,23 +404,6 @@ body {
   letter-spacing: 1px;
   color: #fffefe;
   background-color: #0b0c14; }
-  #datamort .saira {
-    font-family: "Saira Extra Condensed", sans-serif; }
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  .flex-container.full-height {
-    min-height: 100vh; }
-
-.flex-item {
-  align-self: center; }
-
-.center {
-  margin-right: auto;
-  margin-left: auto; }
 
 .highlighted {
   position: relative;
@@ -438,18 +418,15 @@ body {
     content: '';
     background-color: #ec2323; }
 
+.hideScrollbar {
+  overflow: hidden;
+  width: 300px; }
+
 .redlight {
   background-color: #ec2323; }
 
-.header_title {
-  font-size: 3.5em;
-  margin: 0 0 20px;
-  text-align: center;
-  letter-spacing: 2px; }
-  .header_title .highlighted {
-    font-size: .7em; }
-
-button.link {
+/* ----- NAVIGATION ----- */
+.nav-button {
   font-family: "Saira Extra Condensed", sans-serif;
   font-size: 1.4em;
   display: inline-block;
@@ -457,19 +434,118 @@ button.link {
   text-decoration: none;
   letter-spacing: 2px;
   color: #fffefe;
-  border: none;
+  border: 0;
   background: none; }
-  button.link:hover::after {
+  .nav-button:hover::after {
     top: -5px;
-    height: 37px; }
+    height: 36px; }
 
 .page {
+  display: none;
+  min-height: 100vh; }
+
+/* ----- TITLE ----- */
+.page-title {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 3.5em;
+  margin: 0 0 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .page-title .highlighted {
+    font-size: .7em; }
+
+/* ----- FLEXBOX ----- */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.flex-item {
+  align-self: center; }
+
+.center {
+  margin-right: auto;
+  margin-left: auto; }
+
+/* ----- INPUT / SELECT ----- */
+.text-input,
+.select-input {
+  font-size: 2em;
+  width: 300px;
+  color: #fffefe;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  appearance: none; }
+  .text-input::placeholder,
+  .select-input::placeholder {
+    color: #fffefe; }
+
+.select-container.hide .select-input::before {
   display: none; }
 
+.select-container.hide .select-options {
+  display: none; }
+
+.select-input {
+  margin: 0;
+  cursor: pointer;
+  user-select: none; }
+  .select-input::before {
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    display: block;
+    width: 5px;
+    height: 160px;
+    content: '';
+    background-color: #ec2323; }
+  .select-input img {
+    float: right;
+    width: 40px;
+    margin-top: 6px; }
+
+.select-options {
+  position: relative;
+  display: block;
+  overflow: auto;
+  width: 100%;
+  max-height: 150px;
+  margin: 0;
+  margin-top: 10px;
+  padding-right: 20px;
+  padding-left: 0; }
+
+.select-option {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 1.5em;
+  position: relative;
+  list-style: none;
+  cursor: pointer; }
+  .select-option::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    content: '';
+    background-color: #fffefe; }
+  .select-option:hover {
+    color: #ec2323; }
+    .select-option:hover::after {
+      background-color: #ec2323; }
+
 #home .content-container {
-  width: 405px;
+  width: 376px;
   margin-top: 100px;
   margin-bottom: 100px; }
+
+#home .nav-button {
+  display: block; }
 
 #result .content-container {
   margin-top: 50px; }
@@ -484,10 +560,6 @@ button.link {
 #result .title-container {
   width: 300px; }
 
-#result .right {
-  width: 500px;
-  padding: 20px; }
-
-#result .left {
+#result .right, #result .left {
   width: 500px;
   padding: 20px; }

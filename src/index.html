@@ -26,28 +26,29 @@
 <body>
   <main id="datamort">
 
-    <section id="home" class="flex-container full-height page">
+    <section id="home" class="flex-container page">
       <article class="flex-item">
-        <header class="header">
-          <h1 class="header_title saira">
-            <span class="highlighted">1 FRANÇAIS·E MEURT TOUTES LES 54 SECONDES</span> <br> ET SI C'ETAIT VOUS ?
+        <header>
+          <h1 class="page-title">
+            <span class="highlighted">1 français·e meurt toutes les 54 secondes</span> <br> et si c'était vous ?
           </h1>
         </header>
 
-        <p class="content-container center">Vous êtes un homme, vous habitez Strasbourg <br> et vous avez 58 ans ? C’est un cancer qui <br> vous emportera. <br> Mais si vous êtes une femme, habitant à Toulouse et âgée de 77 ans, c’est une maladie du système nerveux qui vous emmènera au
-          paradis.
-        </p>
+        <div class="content-container center">
+          <p>Vous êtes un homme, vous habitez Strasbourg et vous avez 58 ans ? C’est un cancer qui vous emportera.</p>
+          <p>Mais si vous êtes une femme, habitant à Toulouse et âgée de 77 ans, c’est une maladie du système nerveux qui vous emmènera au paradis.</p>
+        </div>
 
-        <nav class="flex-container">
-          <button onclick="openPage(event, 'result')" class="link highlighted center">Avec Datamort, simulez votre propre mort...</button>
+        <nav>
+          <button onclick="openPage(event, 'result')" class="nav-button center highlighted">Avec Datamort, simulez votre propre mort...</button>
         </nav>
       </article>
     </section>
 
-    <section id="result" class="flex-container full-height page">
+    <!-- <section id="result" class="flex-container page">
       <article class="flex-item">
-        <header class="header">
-          <h1 class="header_title saira">
+        <header>
+          <h1 class="page-title">
             <span class="highlighted">VOUS ALLEZ MOURIR...</span>
           </h1>
         </header>
@@ -72,7 +73,7 @@
           </div>
         </section>
       </article>
-    </section>
+    </section> -->
 
     <script>
       function openPage(event, page) {
@@ -84,7 +85,7 @@
         document.getElementById(page).style.display = "flex"
       }
 
-      openPage(null, "result")
+      openPage(null, "home")
     </script>
 
   </main>
