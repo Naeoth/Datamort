@@ -83,6 +83,7 @@
 
 #search:target #search-content,
 #result:target #result-content,
+#map:target #map-content,
 #credits:target #credits-content {
   transform: translate3D(-200%, 0, 0);
 }
@@ -268,10 +269,14 @@
 
 
 .diagram-double-bars {
+  font-family: $saira;
+  font-size: 125%;
+
   position: relative;
 
-  width: 450px;
-  height: 30px;
+  width: 350px;
+  height: 25px;
+  margin-left: 15%;
 }
 .diagram-left-bar,
 .diagram-right-bar {
@@ -295,14 +300,14 @@
 }
 .diagram-label {
   position: absolute;
-  top: 0;
+  top: -9px;
   left: 0;
 
   transform: translateX(-120%) translateY(-50%);
 }
 .diagram-total {
   position: absolute;
-  top: 0;
+  top: -9px;
   right: 0;
 
   transform: translateX(120%) translateY(-50%);
@@ -310,11 +315,17 @@
 
 .slider-simple,
 .slider-double {
+  font-family: $saira;
+  font-size: 18px;
+  font-weight: 400;
+
   position: relative;
 
-  width: 450px;
-  height: 6px;
-  margin-top: 50px;
+  width: 250px;
+  height: 4px;
+  margin-top: 20px;
+
+  background-color: green;
 }
 .slider-left-part,
 .slider-right-part,
@@ -358,7 +369,7 @@
 }
 .slider-button-label {
   position: absolute;
-  top: -20px;
+  top: -25px;
   left: 50%;
 
   user-select: none;
