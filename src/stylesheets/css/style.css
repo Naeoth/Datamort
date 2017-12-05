@@ -489,9 +489,6 @@ template {
   .text-input::placeholder,
   .select-input::placeholder {
     color: #fffefe; }
-  .text-input:hover,
-  .select-input:hover {
-    color: #959595; }
 
 .select-container.hide .select-input::before {
   display: none; }
@@ -509,7 +506,7 @@ template {
     left: -10px;
     display: block;
     width: 5px;
-    height: 160px;
+    height: 120px;
     content: '';
     background-color: #ec2323; }
   .select-input img {
@@ -522,7 +519,7 @@ template {
   display: block;
   overflow: auto;
   width: 100%;
-  max-height: 150px;
+  max-height: 110px;
   margin: 0;
   margin-top: 10px;
   padding-right: 20px;
@@ -565,25 +562,27 @@ template {
   cursor: pointer;
   transition: all .1s ease-in;
   fill: #fffefe; }
-  .sex-choice:hover {
-    fill: #959595; }
   .sex-choice svg {
     height: 100px; }
 
 .diagram-double-bars {
+  position: relative;
   width: 450px;
   height: 30px; }
 
 .diagram-left-bar,
 .diagram-right-bar {
-  display: inline-block;
-  height: 100%; }
+  position: absolute;
+  top: 0;
+  bottom: 0; }
 
 .diagram-left-bar {
-  background-color: #ec2323; }
+  left: 0;
+  background-color: #d11d1d; }
 
 .diagram-right-bar {
-  background-color: #fffefe; }
+  right: 0;
+  background-color: #fff; }
 
 .slider-simple,
 .slider-double {
@@ -644,8 +643,7 @@ template {
   #home-content .button {
     display: table; }
 
-#p4,
-#p5 {
+#p4 {
   left: 200%; }
 
 #search-content {
@@ -666,24 +664,34 @@ template {
   #search-content .content-container {
     position: relative;
     width: 600px;
-    height: 600px;
+    height: 575px;
     padding: 20px; }
   #search-content .present {
     font-size: 1.3em;
     line-height: 1.3em;
+    margin: 0;
     text-align: justify; }
+  #search-content .hurryUp {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin-bottom: 15px; }
   #search-content .form-data {
     margin-right: 10px; }
   #search-content .form-sex,
   #search-content .form-city {
     align-self: flex-start; }
+  #search-content .form-city {
+    margin-right: 10px; }
   #search-content .age {
-    margin-bottom: 60px; }
+    margin-bottom: 40px; }
   #search-content .input-container {
     font-weight: 500; }
   #search-content .button {
     position: absolute;
-    bottom: 45px; }
+    bottom: 68px; }
+  #search-content .form-sex {
+    margin-top: 25px; }
 
 #result-content {
   left: 200%; }
@@ -789,3 +797,10 @@ template {
 
 #credits-content {
   left: 200%; }
+  #credits-content .content-container {
+    width: 575px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify; }
+  #credits-content .names {
+    font-size: .5rem; }
