@@ -249,6 +249,12 @@
   input:checked + .sex-choice {
     fill: $red;
   }
+
+  input {
+            appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+  }
 }
 
 .woman,
@@ -279,11 +285,12 @@
 .diagram-double-bars {
   font-family: $saira;
   font-size: 125%;
-    margin-left:15%;
+
   position: relative;
 
   width: 350px;
   height: 25px;
+  margin-left: 15%;
 }
 .diagram-left-bar,
 .diagram-right-bar {
