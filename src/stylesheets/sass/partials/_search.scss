@@ -55,39 +55,6 @@
     font-weight: 500;
   }
 
-  .form-sex {
-    width: 100px;
-    margin-top: 35px;
-
-    input:checked + .sex-choice {
-      fill: $red;
-    }
-  }
-
-  #woman,
-  #man {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-  }
-
-  .sex-choice {
-    display: inline-block;
-
-    cursor: pointer;
-    transition: all .1s ease-in;
-
-    fill: $white;
-
-    &:hover {
-      fill: $grey-main;
-    }
-
-    svg {
-      height: 100px;
-    }
-  }
-
   .button {
     position: absolute;
     bottom: 45px;

@@ -241,3 +241,113 @@
     }
   }
 }
+
+.form-sex {
+  width: 100px;
+  margin-top: 35px;
+
+  input:checked + .sex-choice {
+    fill: $red;
+  }
+}
+
+.woman,
+.man {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.sex-choice {
+  display: inline-block;
+
+  cursor: pointer;
+  transition: all .1s ease-in;
+
+  fill: $white;
+
+  &:hover {
+    fill: $grey-main;
+  }
+
+  svg {
+    height: 100px;
+  }
+}
+
+
+.diagram-double-bars {
+  width: 450px;
+  height: 30px;
+}
+.diagram-left-bar,
+.diagram-right-bar {
+  display: inline-block;
+
+  height: 100%;
+}
+.diagram-left-bar {
+  background-color: $red;
+}
+.diagram-right-bar {
+  background-color: $white;
+}
+
+.slider-simple,
+.slider-double {
+  position: relative;
+
+  width: 450px;
+  height: 6px;
+  margin-top: 50px;
+}
+.slider-left-part,
+.slider-right-part,
+.slider-middle-part {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.slider-left-part {
+  left: 0;
+
+  background-color: $red;
+}
+.slider-right-part {
+  right: 0;
+
+  background-color: $grey_main;
+}
+.slider-double .slider-left-part {
+  background-color: $grey_main;
+}
+.slider-double .slider-right-part {
+  background-color: $grey_main;
+}
+.slider-double .slider-middle-part {
+  background-color: $red;
+}
+.slider-button {
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  cursor: pointer;
+  transform: translateY(-50%) translateX(-50%);
+
+  border-radius: 50%;
+  background-color: $white;
+}
+.slider-button-label {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+
+  user-select: none;
+  transform: translateX(-50%);
+
+  color: $white;
+}
