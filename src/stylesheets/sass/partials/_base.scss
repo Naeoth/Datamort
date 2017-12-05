@@ -149,10 +149,6 @@
   &::placeholder {
     color: $white;
   }
-
-  &:hover {
-    color: $grey-main;
-  }
 }
 
 .select-container {
@@ -181,7 +177,7 @@
     display: block;
 
     width: 5px;
-    height: 160px;
+    height: 120px;
 
     content: '';
 
@@ -203,7 +199,7 @@
   overflow: auto;
 
   width: 100%;
-  max-height: 150px;
+  max-height: 110px;
   margin: 0;
   margin-top: 10px;
   padding-right: 20px;
@@ -273,10 +269,6 @@
 
   fill: $white;
 
-  &:hover {
-    fill: $grey-main;
-  }
-
   svg {
     height: 100px;
   }
@@ -284,10 +276,14 @@
 
 
 .diagram-double-bars {
+  font-family: $saira;
+  font-size: 125%;
+
   position: relative;
 
-  width: 450px;
-  height: 30px;
+  width: 350px;
+  height: 25px;
+  margin-left: 15%;
 }
 .diagram-left-bar,
 .diagram-right-bar {
@@ -311,14 +307,14 @@
 }
 .diagram-label {
   position: absolute;
-  top: 0;
+  top: -9px;
   left: 0;
 
   transform: translateX(-120%) translateY(-50%);
 }
 .diagram-total {
   position: absolute;
-  top: 0;
+  top: -9px;
   right: 0;
 
   transform: translateX(120%) translateY(-50%);
