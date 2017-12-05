@@ -95,6 +95,22 @@ function getCategory(category) {
 
       document.getElementById("title").innerHTML = response.title
       document.getElementById("content").innerHTML = response.content
+
+      let array = ["1st", "2nde", "3rd", "4th", "5th"]
+      let categoryNames = ["Tuberculose", "Infection à méningocoques", "SIDA et maladies à VIH", "Hépatites virales", "Autres maladies infectieuses et parasitaires", "Tumeur maligne de la lèvre de la cavité buccale et du pharynx", "Tumeur maligne du oesophage", "Tumeur maligne de lestomac", "Tumeur maligne du côlon", "Tumeur maligne du rectum et de l’anus", "Tumeur maligne du foie et des voies biliaires intrahépatiques", "Tumeur maligne du pancréas", "Tumeur maligne du larynx de la trachée des bronches et du poumon", "Mélanome malin de la peau", "Tumeur maligne du sein", "Tumeur maligne du col de l’utérus", "Tumeur maligne d’autres parties de l’utérus", "Tumeur maligne de l’ovaire", "Tumeur maligne de la prostate", "Tumeur maligne du rein", "Tumeur maligne de la vessie", "Tumeur maligne des tissus lymphatiques et hématopoïétiques", "Autres tumeurs malignes", "Autres tumeurs", "Maladies du sang et des organes hématopoïétiques", "Diabète sucré", "Autres maladies endocriniennes nutritionelles et métaboliques", "Abus d’alcool (y compris psychose alcoolique)", "Pharmacodépendance toxicomanie", "Autres troubles mentaux et du comportement", "Méningites (autres que 03)", "Autres maladies du système nerveux et des organes du sens", "Cardiopathies ischémiques", "Autres cardiopathies", "Maladies cérébrovasculaires", "Autres maladie de l’appareil circulatoire", "Grippe", "Pneumonie", "Asthme", "Autres maladies chroniques des voies respiratoires inférieures", "Autres maladies de l’appareil respiratoire", "Ulcère gastro-duodénal", "Maladie chronique du foie", "Autres maladies de l’appareil digestif", "Infections de la peau et du tissu cellulaire sous-cutané", "Arthrite rhumatoïde et ostéoarthrite", "Autres maladies du système ostéo-articulaire des muscles et du tissu conjonctif", "Maladies du rein et de luretère", "Autres maladies de lappareil génito-urinaire", "Complic. de grossesse accouch. et puerpéralité", "Certaines affections dont l’origine se situe dans la période périnatale", "Malformations congénitales du système nerveux", "Malformations congénitales de l’appareil circulatoire", "Autres malformations congén. et anom. chromosomiques", "Syndrome de mort subite du nourrisson", "Causes inconnues ou non précisées", "Autres symptômes et états morbides mal définis", "Accidents de transport", "Chutes accidentelles", "Intoxications accidentelles", "Autres accidents", "Suicides", "Homicides", "Événements dont lintention nest pas déterminée", "Autres causes externes de blessure et d'empoisonnement"]
+
+      let elements = ""
+      for (let i = 0; i < response.category.length && i < array.length; i++) {
+        elements +=
+          `<div class="diagram-double-bars" data-label="` + array[i] + `" data-total="` + response.category[i].total + `">` +
+          `<p class="diagram-label">` + response.category[i].total + `</p>` +
+          `<p class="diagram-total">` + categoryNames[response.category[i].id] + `</p>` +
+          `<div class="diagram-left-bar" data-value="` + response.category[i].hommes * 100 + `"></div>` +
+          `<div class="diagram-right-bar" data-value="` + response.category[i].femmes * 100 + `"></div>` +
+          `</div>`
+      }
+
+      document.getElementById("diagram").innerHTML = elements
     }
   }
 
