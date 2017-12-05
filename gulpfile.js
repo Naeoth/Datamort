@@ -35,7 +35,7 @@ gulp.task('cleanHTML', () => {
     .pipe(htmlBeautify({ indent_size: 2 }))
     .pipe(htmlLint('.html-lint.json'))
     .pipe(htmlLint.reporter())
-    .pipe(gulp.dest("."))
+    //.pipe(gulp.dest("."))
     .pipe(connect.reload())
 })
 
