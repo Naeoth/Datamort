@@ -395,28 +395,78 @@ template {
   to {
     opacity: 1; } }
 
-html,
-body {
-  margin: 0; }
-
+/* ----- GLOBAL ----- */
 #datamort {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   position: relative;
+  overflow: hidden;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   letter-spacing: 1px;
-  color: #fffefe;
-  background-color: #0b0c14; }
-  #datamort .saira {
-    font-family: "Saira Extra Condensed", sans-serif; }
+  color: #fffefe; }
 
+.highlighted {
+  position: relative;
+  z-index: 0; }
+  .highlighted::after {
+    position: absolute;
+    z-index: -1;
+    top: 65%;
+    right: -10px;
+    left: -10px;
+    height: 15px;
+    content: '';
+    background-color: #ec2323; }
+
+.hideScrollbar {
+  overflow: hidden;
+  width: 300px; }
+
+.redlight {
+  background-color: #ec2323; }
+
+/* ----- NAVIGATION ----- */
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all .6s ease;
+  background-color: #0b0c14; }
+
+.button {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #fffefe; }
+  .button:hover::after {
+    top: -5px;
+    height: 44px; }
+
+#search:target #search-content,
+#result:target #result-content {
+  transform: translate3D(-200%, 0, 0); }
+
+/* ----- TITLE ----- */
+.page-title {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 3.5rem;
+  margin: 0 0 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .page-title .highlighted {
+    font-size: .7em; }
+
+/* ----- FLEXBOX ----- */
 .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
-  .flex-container.full-height {
-    min-height: 100vh; }
 
 .flex-item {
   align-self: center; }
@@ -425,10 +475,14 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
+/* ----- INPUT / SELECT ----- */
 .text-input,
 .select-input {
-  font-size: 2em;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 2rem;
   width: 300px;
+  transition: all .1s ease-in;
+  letter-spacing: 1px;
   color: #fffefe;
   border: 0;
   outline: 0;
@@ -439,6 +493,9 @@ body {
   .text-input::placeholder,
   .select-input::placeholder {
     color: #fffefe; }
+  .text-input:hover,
+  .select-input:hover {
+    color: #959595; }
 
 .select-container.hide .select-input::before {
   display: none; }
@@ -464,10 +521,6 @@ body {
     width: 40px;
     margin-top: 6px; }
 
-.hideScrollbar {
-  overflow: hidden;
-  width: 300px; }
-
 .select-options {
   position: relative;
   display: block;
@@ -484,7 +537,8 @@ body {
   font-size: 1.5em;
   position: relative;
   list-style: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .1s ease-in; }
   .select-option::after {
     position: absolute;
     top: 0;
@@ -498,121 +552,90 @@ body {
     .select-option:hover::after {
       background-color: #ec2323; }
 
-.highlighted {
-  position: relative;
-  z-index: 9999; }
-  .highlighted::after {
+#home-content {
+  left: 0; }
+  #home-content .content-container {
+    width: 376px;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+  #home-content .button {
+    display: table; }
+
+#p4,
+#p5 {
+  left: 200%; }
+
+#search-content {
+  left: 200%; }
+  #search-content .title-container {
+    width: 400px;
+    padding: 20px; }
+  #search-content .page-title {
+    text-align: left; }
+    #search-content .page-title span {
+      font-size: 1.2em;
+      line-height: 1.3em;
+      margin-left: 10px; }
+    #search-content .page-title p {
+      font-size: 1.6em;
+      line-height: .9em;
+      margin-top: 80px;
+      margin-bottom: 0; }
+  #search-content .content-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    padding: 20px; }
+  #search-content .present {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    text-align: justify; }
+  #search-content .form-data {
+    margin-right: 10px; }
+  #search-content .form-sex {
+    width: 100px;
+    margin-top: 35px; }
+    #search-content .form-sex input:checked + .sex-choice {
+      fill: #ec2323; }
+  #search-content #woman,
+  #search-content #man {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  #search-content .sex-choice {
+    display: inline-block;
+    cursor: pointer;
+    transition: all .1s ease-in;
+    fill: #fffefe; }
+    #search-content .sex-choice:hover {
+      fill: #959595; }
+    #search-content .sex-choice svg {
+      height: 100px; }
+  #search-content .button {
     position: absolute;
-    z-index: -1;
-    top: 65%;
-    right: -10px;
-    left: -10px;
-    height: 15px;
-    content: '';
-    background-color: #ec2323; }
+    bottom: 0; }
 
-.redlight {
-  background-color: #ec2323; }
-
-.header_title {
-  font-size: 3.5em;
-  margin: 0 0 20px;
-  text-align: center;
-  letter-spacing: 2px; }
-  .header_title .highlighted {
-    font-size: .7em; }
-
-button.link {
-  font-family: "Saira Extra Condensed", sans-serif;
-  font-size: 1.4em;
-  display: inline-block;
-  padding: 0;
-  text-decoration: none;
-  letter-spacing: 2px;
-  color: #fffefe;
-  border: none;
-  background: none; }
-  button.link:hover::after {
-    top: -5px;
-    height: 36px; }
-
-.page {
-  display: none; }
-
-#home .content-container {
-  position: relative;
-  width: 600px;
-  height: 600px;
-  padding: 20px; }
-
-#home .title-container {
-  width: 400px;
-  padding: 20px;
-  text-transform: uppercase; }
-
-#home .title p {
-  font-size: 3em;
-  line-height: .9em;
-  margin: 0;
-  margin-top: 80px; }
-
-#home .title span {
-  font-size: 1.5em;
-  line-height: 1.3em;
-  margin-left: 10px; }
-
-#home .present {
-  font-size: 1.3em;
-  line-height: 1.3em;
-  text-align: justify; }
-
-#home .form-icons {
-  width: 100px; }
-
-#home .validateForm {
-  font-size: 2em;
-  font-weight: 600;
-  position: absolute;
-  bottom: 0; }
-  #home .validateForm:hover::after {
-    top: -5px;
-    height: 43px; }
-
-.title {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 2.5em;
-  font-weight: 500;
-  line-height: 145%;
-  text-transform: uppercase; }
-  .title span {
-    line-height: .5em; }
-  .title .cache1,
-  .title .cache2,
-  .title .cache3,
-  .title .cache4 {
-    position: absolute;
-    width: 500px;
-    height: 10px;
-    background-color: blue; }
-  .title .cache1 {
-    top: -9px; }
-  .title .cache2 {
-    top: 42px;
-    height: 6px; }
-  .title .cache3 {
-    top: 88px;
-    height: 6px; }
-  .title .cache4 {
-    top: 133px;
-    height: 15px; }
-
-.title-container {
-  width: 300px; }
-
-.right {
-  width: 500px;
-  padding: 20px; }
-
-.left {
-  width: 500px;
-  padding: 20px; }
+#result-content {
+  left: 200%; }
+  #result-content .title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 145%;
+    text-transform: uppercase; }
+    #result-content .title span {
+      line-height: .5em; }
+    #result-content .title .content-container {
+      margin-top: 50px; }
+    #result-content .title .title {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 2.5em;
+      font-weight: 500;
+      line-height: 145%;
+      text-transform: uppercase; }
+    #result-content .title .title-container {
+      width: 300px; }
+    #result-content .title .right,
+    #result-content .title .left {
+      width: 500px;
+      padding: 20px; }
