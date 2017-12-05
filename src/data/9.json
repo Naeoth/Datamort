@@ -1,5 +1,11 @@
-{
-	"title": "Causes externes de blessure et d’empoisonnement",
-	"content": "Il s’agit de toutes les lésions traumatiques ou les intoxications liées à des causes externes. Cette catégorie regroupe tous les accidents qui ne sont pas liés aux transports à savoir principalement les chutes et les intoxications. On retrouve également dans cette catégorie les morts liées à des événements dont l’intention ou la cause ne sont pas déterminés. ",
-	"categories":[57]
+ï»¿{
+	"title": "Causes externes de blessure et dâ€™empoisonnement",
+	"content": "Il sâ€™agit de toutes les lÃ©sions traumatiques ou les intoxications liÃ©es Ã  des causes externes. Cette catÃ©gorie regroupe tous les accidents qui ne sont pas liÃ©s aux transports Ã  savoir principalement les chutes et les intoxications. On retrouve Ã©galement dans cette catÃ©gorie les morts liÃ©es Ã  des Ã©vÃ©nements dont lâ€™intention ou la cause ne sont pas dÃ©terminÃ©s. ",
+	"categories":[
+	{
+		"id":57,
+		"hommes":0.7518821604,
+		"femmes":0.2481178396,
+		"total":3055
+	}]
 }

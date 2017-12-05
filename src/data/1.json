@@ -1,5 +1,11 @@
-{
+ï»¿{
 	"title": "Sida",
-	"content": "Selon l’OMS (Organisation mondiale de la santé), le virus de l’immunodéficience humaine (VIH) est un rétrovirus qui s’attaque aux cellules du système immunitaire et les détruit ou les rend inefficaces. Aux premiers stades de l’infection, le sujet ne présente pas de symptômes. Cependant, l’évolution de l’infection entraîne un affaiblissement du système immunitaire et une vulnérabilité accrue aux infections opportunistes.\nLe syndrome d’immunodéficience acquise (Sida) est le dernier stade de l’infection à VIH. Il peut se déclarer au bout de 10 à 15 ans. Les antirétroviraux permettent de ralentir son évolution.\nLe VIH se transmet à l’occasion de rapports sexuels (anaux ou vaginaux) non protégés, d’une transfusion de sang contaminé ou de l’usage de seringues contaminées. Il se transmet aussi de la mère à l’enfant pendant la grossesse, l’accouchement ou l’allaitement au sein.",
-	"categories":[2]
+	"content": "Selon lâ€™OMS (Organisation mondiale de la santÃ©), le virus de lâ€™immunodÃ©ficience humaine (VIH) est un rÃ©trovirus qui sâ€™attaque aux cellules du systÃ¨me immunitaire et les dÃ©truit ou les rend inefficaces. Aux premiers stades de lâ€™infection, le sujet ne prÃ©sente pas de symptÃ´mes. Cependant, lâ€™Ã©volution de lâ€™infection entraÃ®ne un affaiblissement du systÃ¨me immunitaire et une vulnÃ©rabilitÃ© accrue aux infections opportunistes.\nLe syndrome dâ€™immunodÃ©ficience acquise (Sida) est le dernier stade de lâ€™infection Ã  VIH. Il peut se dÃ©clarer au bout de 10 Ã  15 ans. Les antirÃ©troviraux permettent de ralentir son Ã©volution.\nLe VIH se transmet Ã  lâ€™occasion de rapports sexuels (anaux ou vaginaux) non protÃ©gÃ©s, dâ€™une transfusion de sang contaminÃ© ou de lâ€™usage de seringues contaminÃ©es. Il se transmet aussi de la mÃ¨re Ã  lâ€™enfant pendant la grossesse, lâ€™accouchement ou lâ€™allaitement au sein.",
+	"categories":[
+	{
+		"id":2,
+		"hommes":0.7548746518,
+		"femmes":0.2451253482,
+		"total":359
+	}]
 }

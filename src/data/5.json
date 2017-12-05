@@ -1,5 +1,17 @@
-{
-	"title": "Maladies du système nerveux et des organes des sens",
-	"content": "Les maladies du système nerveux périphérique et central englobent les maladies et les troubles du cerveau, de la moelle épinière, des nerfs crâniens, des nerfs périphériques, des racines nerveuses, du système nerveux autonome et du système neuromusculaire.\nParmi ces maladies, les plus connues sont l’épilepsie, la maladie de Parkinson ou encore tous les types de surdité. ",
-	"categories":[30, 31]
+ï»¿{
+	"title": "Maladies du systÃ¨me nerveux et des organes des sens",
+	"content": "Les maladies du systÃ¨me nerveux pÃ©riphÃ©rique et central englobent les maladies et les troubles du cerveau, de la moelle Ã©piniÃ¨re, des nerfs crÃ¢niens, des nerfs pÃ©riphÃ©riques, des racines nerveuses, du systÃ¨me nerveux autonome et du systÃ¨me neuromusculaire.\nParmi ces maladies, les plus connues sont lâ€™Ã©pilepsie, la maladie de Parkinson ou encore tous les types de surditÃ©. ",
+	"categories":[
+	{
+		"id":30,
+		"hommes":0.5714285714,
+		"femmes":0.4285714286,
+		"total":133
+	}, 
+	{
+		"id":31,
+		"hommes":0.3852487943,
+		"femmes":0.6147512057,
+		"total":34004
+	}]
 }

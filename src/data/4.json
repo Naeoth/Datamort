@@ -1,5 +1,23 @@
-{
+ï»¿{
 	"title": "Alcool et toxicomanie",
-	"content": "On parle d’alcoolisme dès lors que la consommation d’alcool d’un individu a des conséquences sur sa santé mentale ou physique. C’est une maladie qui se manifeste par la dépendance. \nLa consommation excessive d’alcool expose à de multiples risques pour la santé et cause plus de 200 maladies et atteintes diverses. Elle peut provoquer une cirrhose alcoolique et certaines atteintes neurologiques et constitue un facteur de risques pour de nombreux cancers : bouche, larynx, œsophage, foie, côlon.\nL’abus d’alcool contribuerait de façon directe ou indirect à 13% des décès masculins et 3% des décès féminins. C’est ainsi la deuxième cause de mortalité prématurée (avant 65 ans) en France. \nLa toxicomanie est la dépendance physique et/ou psychologique à une ou plusieurs substances, recherchées pour leurs effets euphorisants, enivrants, excitants ou hallucinogènes. Le principal lien entre toxicomanie et décès prématuré est lié à l’augmentation des comportements à risque exposant aux hépatites et au Sida.",
-	"categories":[27, 28, 29]
+	"content": "On parle dâ€™alcoolisme dÃ¨s lors que la consommation dâ€™alcool dâ€™un individu a des consÃ©quences sur sa santÃ© mentale ou physique. Câ€™est une maladie qui se manifeste par la dÃ©pendance. \nLa consommation excessive dâ€™alcool expose Ã  de multiples risques pour la santÃ© et cause plus de 200 maladies et atteintes diverses. Elle peut provoquer une cirrhose alcoolique et certaines atteintes neurologiques et constitue un facteur de risques pour de nombreux cancers : bouche, larynx, Å“sophage, foie, cÃ´lon.\nLâ€™abus dâ€™alcool contribuerait de faÃ§on directe ou indirect Ã  13% des dÃ©cÃ¨s masculins et 3% des dÃ©cÃ¨s fÃ©minins. Câ€™est ainsi la deuxiÃ¨me cause de mortalitÃ© prÃ©maturÃ©e (avant 65 ans) en France. \nLa toxicomanie est la dÃ©pendance physique et/ou psychologique Ã  une ou plusieurs substances, recherchÃ©es pour leurs effets euphorisants, enivrants, excitants ou hallucinogÃ¨nes. Le principal lien entre toxicomanie et dÃ©cÃ¨s prÃ©maturÃ© est liÃ© Ã  lâ€™augmentation des comportements Ã  risque exposant aux hÃ©patites et au Sida.",
+	"categories":[
+	{
+		"id":27,
+		"hommes":0.8099106418,
+		"femmes":0.1900893582,
+		"total":2462
+	},
+	{
+		"id":28,
+		"hommes":0.8139534884,
+		"femmes":0.1860465116,
+		"total":129
+	},
+	{
+		"id":29,
+		"hommes":0.3475475373,
+		"femmes":0.6524524627,
+		"total":19511
+	}]
 }

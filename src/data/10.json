@@ -1,5 +1,35 @@
-{
+ï»¿{
 	"title": "Accidents de transports", 
-	"content": "Sans surprise, les accidents les plus mortels sont les accidents de la route. C’est là qu’on retrouve près de 90% des tués en 2014. Les accidents ferroviaires représentent 1,8% des morts par accidents de transports, les accidents aériens 1,5% et les accidents maritimes 7,4%. L’alcoolémie positive d’un conducteur est présente dans 28% des accidents mortels, elle est la première cause d’accidents mortels, viennent ensuite la vitesse excessive (26%) et l’absence de ceinture. \nLes accidents de la route sont la première cause de mortalité chez les jeunes de 18-24 ans. En 2014, les motocyclistes constituent 18% des tués sur la route, les cyclistes 4,7%, et près de 15% des personnes tuées sur la route étaient des piétons. ", 
-	"categories":[58, 59, 60, 63, 64]
+	"content": "Sans surprise, les accidents les plus mortels sont les accidents de la route. Câ€™est lÃ  quâ€™on retrouve prÃ¨s de 90% des tuÃ©s en 2014. Les accidents ferroviaires reprÃ©sentent 1,8% des morts par accidents de transports, les accidents aÃ©riens 1,5% et les accidents maritimes 7,4%. Lâ€™alcoolÃ©mie positive dâ€™un conducteur est prÃ©sente dans 28% des accidents mortels, elle est la premiÃ¨re cause dâ€™accidents mortels, viennent ensuite la vitesse excessive (26%) et lâ€™absence de ceinture. \nLes accidents de la route sont la premiÃ¨re cause de mortalitÃ© chez les jeunes de 18-24 ans. En 2014, les motocyclistes constituent 18% des tuÃ©s sur la route, les cyclistes 4,7%, et prÃ¨s de 15% des personnes tuÃ©es sur la route Ã©taient des piÃ©tons. ", 
+	"categories":[
+	{
+		"id":58,
+		"hommes":0.4764767774,
+		"femmes":0.5235232226,
+		"total":6653
+	},
+	{
+		"id":59,
+		"hommes":0.578680203,
+		"femmes":0.421319797,
+		"total":1970
+	},
+	{
+		"id":60,
+		"hommes":0.5079977494,
+		"femmes":0.4920022506,
+		"total":12441
+	},
+	{
+		"id":63,
+		"hommes":0.8095238095,
+		"femmes":0.1904761905,
+		"total":672
+	},
+	{
+		"id":64,
+		"hommes":0.5179794521,
+		"femmes":0.4820205479,
+		"total":1168
+	}]
 }

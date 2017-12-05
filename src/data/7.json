@@ -1,5 +1,35 @@
-{
+ï»¿{
 	"title": "Maladies de la peau, des os et des muscles",
-	"content": "Les infections de la peau sont généralement dues à une affection bactérienne. Mais certaines infections sont liées à un virus comme l’herpès ou les verrues. \nLes maladies ostéo-articulaires, des muscles et du tissu conjonctif touchent les os et les cartilages des articulations ainsi que les muscles, les ligaments articulaires et le tissu conjonctif qui appartiennent à l'os ou au cartilage. L’arthrose et l’ostéoporose sont des maladies fréquentes.",
-	"categories":[44, 45, 46, 47, 48]
+	"content": "Les infections de la peau sont gÃ©nÃ©ralement dues Ã  une affection bactÃ©rienne. Mais certaines infections sont liÃ©es Ã  un virus comme lâ€™herpÃ¨s ou les verrues. \nLes maladies ostÃ©o-articulaires, des muscles et du tissu conjonctif touchent les os et les cartilages des articulations ainsi que les muscles, les ligaments articulaires et le tissu conjonctif qui appartiennent Ã  l'os ou au cartilage. Lâ€™arthrose et lâ€™ostÃ©oporose sont des maladies frÃ©quentes.",
+	"categories":[
+	{
+		"id":44,
+		"hommes":0.3312217195,
+		"femmes":0.6687782805,
+		"total":1105
+	},
+ 	{
+		"id":45,
+		"hommes":0.2273534636,
+		"femmes":0.7726465364,
+		"total":563
+	},
+	{
+		"id":46,
+		"hommes":0.4225435232,
+		"femmes":0.5774564768,
+		"total":3389
+	}, 
+	{
+		"id":47,
+		"hommes":0.4641767185,
+		"femmes":0.5358232815,
+		"total":6881
+	},
+	{
+		"id":48,
+		"hommes":0.5230046948,
+		"femmes":0.4769953052,
+		"total":2130
+	}]
 }

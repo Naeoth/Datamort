@@ -1,5 +1,23 @@
-{
-	"title": "Suicides, homicides et état morbide non définis", 
-	"content": "En France, en 2014, les morts par homicide représentaient uniquement 0,10% des causes de mortalité. \nLe suicide est certainement l’une des catégories les plus sous-déclarés parmi les causes de décès. Les catégories d’âge les plus à risque sont les 45-54 ans et les plus de 75 ans. Chez les hommes comme chez les femmes, la pendaison est le moyen privilégié pour mettre fin à ses jours. En moyenne, une tentative sur vingt aboutit au décès. \nUn « état morbide mal défini » correspond à un décès pour lequel aucun diagnostic suffisamment précis n’a pu être établi par les médecins.",
-	"categories":[56, 61, 62] 
+ï»¿{
+	"title": "Suicides, homicides et Ã©tat morbide non dÃ©finis", 
+	"content": "En France, en 2014, les morts par homicide reprÃ©sentaient uniquement 0,10% des causes de mortalitÃ©. \nLe suicide est certainement lâ€™une des catÃ©gories les plus sous-dÃ©clarÃ©s parmi les causes de dÃ©cÃ¨s. Les catÃ©gories dâ€™Ã¢ge les plus Ã  risque sont les 45-54 ans et les plus de 75 ans. Chez les hommes comme chez les femmes, la pendaison est le moyen privilÃ©giÃ© pour mettre fin Ã  ses jours. En moyenne, une tentative sur vingt aboutit au dÃ©cÃ¨s. \nUn Â« Ã©tat morbide mal dÃ©fini Â» correspond Ã  un dÃ©cÃ¨s pour lequel aucun diagnostic suffisamment prÃ©cis nâ€™a pu Ãªtre Ã©tabli par les mÃ©decins.",
+	"categories":[
+	{
+		"id":56,
+		"hommes":0.3954120847,
+		"femmes":0.6045879153,
+		"total":25371
+	},
+	{
+		"id":61,
+		"hommes":0.7499718437,
+		"femmes":0.2500281563,
+		"total":8879
+	},
+	{
+		"id":62,
+		"hommes":0.6489361702,
+		"femmes":0.3510638298,
+		"total":282
+	}] 
 }

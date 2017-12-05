@@ -1,5 +1,23 @@
-{
+ï»¿{
 	"title": "Maladies sanguines et hormonales",
-	"content": "Les maladies du sang touchent les éléments qui composent le sang, à savoir le plasma, les plaquettes et les globules blancs et rouges. La plus courante est l’anémie qui se caractérise par la carence en globules rouges et perturbe le transport d’oxygène.\nLes maladies endocriniennes sont liées à un dysfonctionnement hormonal. La plus connue est le diabète qui correspond à une déficience dans la régulation de la glycémie pouvant conduire à des lésions affectant les vaisseaux et les nerfs.",
-	"categories":[24, 25, 26]
+	"content": "Les maladies du sang touchent les Ã©lÃ©ments qui composent le sang, Ã  savoir le plasma, les plaquettes et les globules blancs et rouges. La plus courante est lâ€™anÃ©mie qui se caractÃ©rise par la carence en globules rouges et perturbe le transport dâ€™oxygÃ¨ne.\nLes maladies endocriniennes sont liÃ©es Ã  un dysfonctionnement hormonal. La plus connue est le diabÃ¨te qui correspond Ã  une dÃ©ficience dans la rÃ©gulation de la glycÃ©mie pouvant conduire Ã  des lÃ©sions affectant les vaisseaux et les nerfs.",
+	"categories":[
+	{
+		"id":24,
+		"hommes":0.4357287449,
+		"femmes":0.5642712551,
+		"total":1976
+	},
+	{
+		"id":25,
+		"hommes":0.4950064731,
+		"femmes":0.5049935269,
+		"total":10814
+	},
+	{
+		"id":26,
+		"hommes":0.3900457085,
+		"femmes":0.6099542915,
+		"total":7876
+	}]
 }

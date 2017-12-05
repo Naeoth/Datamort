@@ -1,5 +1,30 @@
-{
-	"title": "Maladies infectieuses et parasitaires",
-	"content": "Selon l’OMS (Organisation mondiale de la santé), il s’agit des maladies infectieuses causées par des micro-organismes pathogènes, tels que les bactéries, les virus, les parasites ou les champignons. Ces maladies peuvent se transmettre, directement ou indirectement, d'une personne à l'autre.\nExemples : Tuberculose, Choléra, Hépatite, Paludisme, Peste...",
-	"categories":[0, 1, 3, 4]
+ï»¿{
+  "title": "Maladies infectieuses et parasitaires",
+  "content": "Selon lâ€™OMS (Organisation mondiale de la santÃ©), il sâ€™agit des maladies infectieuses causÃ©es par des micro-organismes pathogÃ¨nes, tels que les bactÃ©ries, les virus, les parasites ou les champignons. Ces maladies peuvent se transmettre, directement ou indirectement, d'une personne Ã  l'autre.\nExemples : Tuberculose, CholÃ©ra, HÃ©patite, Paludisme, Peste...",
+  "categories":[
+    {
+      "id":0,
+      "hommes":0.5081206497,
+      "femmes":0.4918793503,
+      "total":431
+    }, 
+    {
+      "id":1,
+      "hommes":0.7083333333,
+      "femmes":0.2916666667,
+      "total":24
+    },
+    {
+      "id":3,
+      "hommes":0.5616197183,
+      "femmes":0.4383802817,
+      "total":568
+    },
+    {
+      "id":4,
+      "hommes":0.4640027168,
+      "femmes":0.5359972832,
+      "total":8834
+    }
+  ]
 }

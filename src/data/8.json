@@ -1,5 +1,35 @@
-{
+ï»¿{
 	"title": "Complications de grossesse",
-	"content": "Environ 85 femmes meurent chaque année en France des suites d’une complication de grossesse. Les premières causes directes de mortalité maternelle sont les hémorragies obstétricales qui représentent environ 18% des décès. Ce sont ensuite les embolies pulmonaires (11%) puis les complications liées à l’hypertension (9%). Plus de 50% des décès concernent les femmes âgées de 30 à 39 ans. Plus de la moitié des décès maternels sont jugés évitables, c’est-à-dire pour lesquels une modification des soins aurait pu changer l’issue fatale (erreur ou retard de diagnostic, retard ou premiers secours inadaptés, traitement inadéquat, retard au traitement ou à l’intervention, et négligence de la patiente). ", 
-	"categories":[49, 50, 51, 52, 53]
+	"content": "Environ 85 femmes meurent chaque annÃ©e en France des suites dâ€™une complication de grossesse. Les premiÃ¨res causes directes de mortalitÃ© maternelle sont les hÃ©morragies obstÃ©tricales qui reprÃ©sentent environ 18% des dÃ©cÃ¨s. Ce sont ensuite les embolies pulmonaires (11%) puis les complications liÃ©es Ã  lâ€™hypertension (9%). Plus de 50% des dÃ©cÃ¨s concernent les femmes Ã¢gÃ©es de 30 Ã  39 ans. Plus de la moitiÃ© des dÃ©cÃ¨s maternels sont jugÃ©s Ã©vitables, câ€™est-Ã -dire pour lesquels une modification des soins aurait pu changer lâ€™issue fatale (erreur ou retard de diagnostic, retard ou premiers secours inadaptÃ©s, traitement inadÃ©quat, retard au traitement ou Ã  lâ€™intervention, et nÃ©gligence de la patiente). ", 
+	"categories":[
+	{
+		"id":49,
+		"hommes":0,
+		"femmes":1,
+		"total":37
+	},
+	{
+		"id":50,
+		"hommes":0.555954089,
+		"femmes":0.444045911,
+		"total":1394
+	},
+	{
+		"id":51,
+		"hommes":0.5039370079,
+		"femmes":0.4960629921,
+		"total":127
+	}, 
+	{
+		"id":52,
+		"hommes":0.5282167043,
+		"femmes":0.4717832957,
+		"total":443
+	},
+	{
+		"id":53,
+		"hommes":0.5023148148,
+		"femmes":0.4976851852,
+		"total":864
+	}]
 }
