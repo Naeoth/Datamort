@@ -82,7 +82,7 @@ gulp.task('cleanJS', () => {
 
 gulp.task('compileJS', ['cleanJS'], () => {
   return browserify("src/scripts/modules/index.js")
-    .transform('babelify', { presets: ['es2015'] })
+    .transform('babelify', { presets: ['env'] })
     .bundle()
     .pipe(source("main.js"))
     .pipe(gulp.dest("src/scripts"))
@@ -110,7 +110,7 @@ gulp.task('clean', () => {
 })
 
 gulp.task('copyAssets', ['clean'], () => {
-  return gulp.src(["src/*", "!src/*.html", "!src/stylesheets"])
+  return gulp.src(["src/*", "!src/*.html", "!src/stylesheets",  "!src/scripts"])
     .pipe(gulp.dest("dist"))
 })
 

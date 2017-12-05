@@ -1,0 +1,83 @@
+#search-content {
+  left: 200%;
+
+  .title-container {
+    width: 400px;
+    padding: 20px;
+  }
+
+  .page-title {
+    text-align: left;
+    span {
+      font-size: 1.2em;
+      line-height: 1.3em;
+
+      margin-left: 10px;
+    }
+
+    p {
+      font-size: 1.6em;
+      line-height: .9em;
+
+      margin-top: 80px;
+      margin-bottom: 0;
+    }
+  }
+
+  .content-container {
+    position: relative;
+
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+  }
+
+  .present {
+    font-size: 1.3em;
+    line-height: 1.3em;
+
+    text-align: justify;
+  }
+
+  .form-data {
+    margin-right: 10px;
+  }
+
+  .form-sex {
+    width: 100px;
+    margin-top: 35px;
+
+    input:checked + .sex-choice {
+      fill: $red;
+    }
+  }
+
+  #woman,
+  #man {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .sex-choice {
+    display: inline-block;
+
+    cursor: pointer;
+    transition: all .1s ease-in;
+
+    fill: $white;
+
+    &:hover {
+      fill: $grey-main;
+    }
+
+    svg {
+      height: 100px;
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 0;
+  }
+}
