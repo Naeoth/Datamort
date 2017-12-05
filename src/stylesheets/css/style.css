@@ -553,6 +553,10 @@ template {
   margin-top: 35px; }
   .form-sex input:checked + .sex-choice {
     fill: #ec2323; }
+  .form-sex input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
 
 .woman,
 .man {
@@ -571,19 +575,39 @@ template {
     height: 100px; }
 
 .diagram-double-bars {
+  position: relative;
   width: 450px;
   height: 30px; }
 
 .diagram-left-bar,
 .diagram-right-bar {
-  display: inline-block;
-  height: 100%; }
+  position: absolute;
+  top: 0;
+  bottom: 0; }
 
 .diagram-left-bar {
-  background-color: #ec2323; }
+  left: 0;
+  background-color: #d11d1d; }
 
 .diagram-right-bar {
-  background-color: #fffefe; }
+  right: 0;
+  background-color: #fff; }
+
+.diagram-label,
+.diagram-total {
+  color: #fff; }
+
+.diagram-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-50%); }
+
+.diagram-total {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(120%) translateY(-50%); }
 
 .slider-simple,
 .slider-double {
