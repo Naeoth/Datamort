@@ -3,6 +3,11 @@ var diagrams = document.getElementsByClassName('diagram-double-bars')
 Array.from(diagrams).forEach(diagram => {
   var leftBar = diagram.getElementsByClassName('diagram-left-bar')[0]
   var rightBar = diagram.getElementsByClassName('diagram-right-bar')[0]
+  var label = diagram.getElementsByClassName('diagram-label')[0]
+  var total = diagram.getElementsByClassName('diagram-total')[0]
+
+  label.innerHTML = diagram.getAttribute('data-label')
+  total.innerHTML = diagram.getAttribute('data-total')
 
   leftBar.style.width = leftBar.getAttribute('data-value') + "%"
   rightBar.style.width = rightBar.getAttribute('data-value') + "%"
