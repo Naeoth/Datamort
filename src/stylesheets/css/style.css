@@ -389,12 +389,6 @@ template {
 [hidden] {
   display: none; }
 
-@keyframes fadeEffect {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
 /* ----- GLOBAL ----- */
 #datamort {
   font-family: "Roboto", sans-serif;
@@ -424,6 +418,7 @@ template {
   width: 300px; }
 
 .redlight {
+  list-style-type: none;
   background-color: #ec2323; }
 
 /* ----- NAVIGATION ----- */
@@ -573,7 +568,6 @@ template {
   #search-content .page-title {
     text-align: left; }
     #search-content .page-title span {
-      font-size: 1.2em;
       line-height: 1.3em;
       margin-left: 10px; }
     #search-content .page-title p {
@@ -612,8 +606,7 @@ template {
     #search-content .sex-choice svg {
       height: 100px; }
   #search-content .button {
-    position: absolute;
-    bottom: 0; }
+    align-self: flex-end; }
 
 #result-content {
   left: 200%; }
@@ -625,17 +618,17 @@ template {
     text-transform: uppercase; }
     #result-content .title span {
       line-height: .5em; }
-    #result-content .title .content-container {
-      margin-top: 50px; }
-    #result-content .title .title {
-      font-family: "Barlow Condensed", sans-serif;
-      font-size: 2.5em;
-      font-weight: 500;
-      line-height: 145%;
-      text-transform: uppercase; }
-    #result-content .title .title-container {
-      width: 300px; }
-    #result-content .title .right,
-    #result-content .title .left {
-      width: 500px;
-      padding: 20px; }
+  #result-content .content-container {
+    margin-top: 50px; }
+  #result-content .title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 145%;
+    text-transform: uppercase; }
+  #result-content .title-container {
+    width: 300px; }
+  #result-content .right,
+  #result-content .left {
+    width: 500px;
+    padding: 20px; }
