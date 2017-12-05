@@ -442,7 +442,8 @@ template {
     height: 44px; }
 
 #search:target #search-content,
-#result:target #result-content {
+#result:target #result-content,
+#credits:target #credits-content {
   transform: translate3D(-200%, 0, 0); }
 
 /* ----- TITLE ----- */
@@ -586,6 +587,13 @@ template {
     text-align: justify; }
   #search-content .form-data {
     margin-right: 10px; }
+  #search-content .form-sex,
+  #search-content .form-city {
+    align-self: flex-start; }
+  #search-content .age {
+    margin-bottom: 60px; }
+  #search-content .input-container {
+    font-weight: 500; }
   #search-content .form-sex {
     width: 100px;
     margin-top: 35px; }
@@ -606,7 +614,8 @@ template {
     #search-content .sex-choice svg {
       height: 100px; }
   #search-content .button {
-    align-self: flex-end; }
+    position: absolute;
+    bottom: 45px; }
 
 #result-content {
   left: 200%; }
@@ -632,3 +641,6 @@ template {
   #result-content .left {
     width: 500px;
     padding: 20px; }
+
+#credits-content {
+  left: 200%; }
