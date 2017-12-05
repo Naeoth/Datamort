@@ -43,6 +43,19 @@
     margin-right: 10px;
   }
 
+  .form-sex,
+  .form-city {
+    align-self: flex-start;
+  }
+
+  .age {
+    margin-bottom: 60px;
+  }
+
+  .input-container {
+    font-weight: 500;
+  }
+
   .form-sex {
     width: 100px;
     margin-top: 35px;
@@ -78,6 +91,6 @@
 
   .button {
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
   }
 }
