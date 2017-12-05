@@ -245,6 +245,12 @@
   input:checked + .sex-choice {
     fill: $red;
   }
+
+  input {
+            appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+  }
 }
 
 .woman,
@@ -289,6 +295,24 @@
   right: 0;
 
   background-color: #fff;
+}
+.diagram-label,
+.diagram-total {
+  color: #fff;
+}
+.diagram-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateX(-120%) translateY(-50%);
+}
+.diagram-total {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transform: translateX(120%) translateY(-50%);
 }
 
 .slider-simple,

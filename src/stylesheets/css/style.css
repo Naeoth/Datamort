@@ -550,6 +550,10 @@ template {
   margin-top: 35px; }
   .form-sex input:checked + .sex-choice {
     fill: #ec2323; }
+  .form-sex input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
 
 .woman,
 .man {
@@ -583,6 +587,25 @@ template {
 .diagram-right-bar {
   right: 0;
   background-color: #fff; }
+<<<<<<< HEAD
+=======
+
+.diagram-label,
+.diagram-total {
+  color: #fff; }
+
+.diagram-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-50%); }
+
+.diagram-total {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(120%) translateY(-50%); }
+>>>>>>> e08d262e02afb8f1fa9cdc66263b678bb09a030d
 
 .slider-simple,
 .slider-double {
