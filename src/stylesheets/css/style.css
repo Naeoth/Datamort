@@ -555,12 +555,6 @@ template {
     -webkit-appearance: none;
     -moz-appearance: none; }
 
-.woman,
-.man {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
 .sex-choice {
   display: inline-block;
   cursor: pointer;
@@ -587,8 +581,6 @@ template {
 .diagram-right-bar {
   right: 0;
   background-color: #fff; }
-<<<<<<< HEAD
-=======
 
 .diagram-label,
 .diagram-total {
@@ -605,7 +597,6 @@ template {
   top: 0;
   right: 0;
   transform: translateX(120%) translateY(-50%); }
->>>>>>> e08d262e02afb8f1fa9cdc66263b678bb09a030d
 
 .slider-simple,
 .slider-double {
@@ -660,11 +651,13 @@ template {
 #home-content {
   left: 0; }
   #home-content .content-container {
-    width: 376px;
+    width: 400px;
     margin-top: 100px;
     margin-bottom: 100px; }
   #home-content .button {
     display: table; }
+  #home-content .present {
+    font-size: 1.1em; }
 
 #p4 {
   left: 200%; }
@@ -692,8 +685,7 @@ template {
   #search-content .present {
     font-size: 1.3em;
     line-height: 1.3em;
-    margin: 0;
-    text-align: justify; }
+    margin: 0; }
   #search-content .hurryUp {
     font-size: 1.5em;
     font-weight: 600;

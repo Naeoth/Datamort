@@ -43,8 +43,8 @@
                   </header>
 
                   <div class="content-container center">
-                    <p>Vous êtes un homme, vous habitez Strasbourg et vous avez 58 ans ? C’est un cancer qui vous emportera.</p>
-                    <p>Mais si vous êtes une Toulousaine de 77 ans, c’est une maladie du système nerveux qui vous emmènera au paradis. </p>
+                    <p class="present">Vous êtes un homme, vous habitez Strasbourg et vous avez 58 ans ? C’est un cancer qui vous emportera.</p>
+                    <p class="present">Mais si vous êtes une Toulousaine de 77 ans, c’est une maladie du système nerveux qui vous emmènera au paradis. </p>
                   </div>
 
                   <nav>
@@ -131,7 +131,7 @@
                         </div>
                       </div>
 
-                      <a id="search-validate" href="" class="button highlighted">Valider</a>
+                      <a id="search-validate" href="#result" class="button highlighted">Valider</a>
                     </form>
                   </div>
                 </div>
@@ -150,9 +150,7 @@
                     <div class="flex-item left">
                       <header class="title-container">
                         <h2 class="title">
-                          <ul>
-                            <span class="redlight"></span>
-                          </ul>
+                          <span id="title" class="redlight"></span>
                         </h2>
                       </header>
 
@@ -161,8 +159,7 @@
 
                     <div class="flex-item right">
                       <article>
-                        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an .</p>
+                        <p id="content" class="center"></p>
                       </article>
                     </div>
                   </article>
@@ -214,7 +211,7 @@
   <!-- build:js scripts/main.min.js -->
   <script src="scripts/main.js"></script>
   <script src="scripts/modules/select-input.js"></script>
-  <script src="scripts/modules/category.js"></script>
+  <script src="scripts/modules/data.js"></script>
   <script src="scripts/modules/diagram-slider.js"></script>
   <!-- endbuild -->
 </body>
