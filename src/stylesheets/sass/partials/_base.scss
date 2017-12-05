@@ -1,28 +1,108 @@
-html,
-body {
-  margin: 0;
-}
+/* ----- GLOBAL ----- */
 
 #datamort {
   font-family: $roboto;
+  font-size: 16px;
 
   position: relative;
 
+  overflow: hidden;
+
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 
   letter-spacing: 1px;
 
   color: $white;
-  background-color: $black;
+}
 
-  .saira {
-    font-family: $saira;
+.highlighted {
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 65%;
+    right: -10px;
+    left: -10px;
+
+    height: 15px;
+
+    content: '';
+
+    background-color: $red;
   }
 }
 
+.hideScrollbar {
+  overflow: hidden;
 
-// PARTIE FLEX
+  width: 300px;
+}
+
+.redlight {
+  background-color: $red;
+}
+
+/* ----- NAVIGATION ----- */
+
+.page {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  transition: all .6s ease;
+
+  background-color: $black;
+}
+
+.button {
+  font-family: $saira;
+  font-size: 2rem;
+  font-weight: 600;
+
+  display: inline-block;
+
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  color: $white;
+
+  &:hover {
+    &::after {
+      top: -5px;
+
+      height: 44px;
+    }
+  }
+}
+
+#search:target #search-content,
+#result:target #result-content {
+  transform: translate3D(-200%, 0, 0);
+}
+
+
+/* ----- TITLE ----- */
+
+.page-title {
+  font-family: $saira;
+  font-size: 3.5rem;
+
+  margin: 0 0 20px;
+
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  .highlighted {
+    font-size: .7em;
+  }
+}
+
+/* ----- FLEXBOX ----- */
 
 .flex-container {
   display: flex;
@@ -30,10 +110,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-  &.full-height {
-    min-height: 100vh;
-  }
 }
 
 .flex-item {
@@ -45,12 +121,17 @@ body {
   margin-left: auto;
 }
 
+/* ----- INPUT / SELECT ----- */
 
 .text-input,
 .select-input {
-  font-size: 2em;
+  font-family: $saira;
+  font-size: 2rem;
 
   width: 300px;
+
+  transition: all .1s ease-in;
+  letter-spacing: 1px;
 
   color: $white;
   border: 0;
@@ -64,7 +145,12 @@ body {
   &::placeholder {
     color: $white;
   }
+
+  &:hover {
+    color: $grey-main;
+  }
 }
+
 .select-container {
   &.hide {
     .select-input::before {
@@ -76,6 +162,7 @@ body {
     }
   }
 }
+
 .select-input {
   margin: 0;
 
@@ -104,11 +191,7 @@ body {
     margin-top: 6px;
   }
 }
-.hideScrollbar {
-  overflow: hidden;
 
-  width: 300px;
-}
 .select-options {
   position: relative;
 
@@ -122,6 +205,7 @@ body {
   padding-right: 20px;
   padding-left: 0;
 }
+
 .select-option {
   font-family: $saira;
   font-size: 1.5em;
@@ -131,6 +215,7 @@ body {
   list-style: none;
 
   cursor: pointer;
+  transition: all .1s ease-in;
 
   &::after {
     position: absolute;
@@ -147,71 +232,9 @@ body {
 
   &:hover {
     color: $red;
+
     &::after {
       background-color: $red;
     }
   }
-}
-
-.highlighted {
-  position: relative;
-  z-index: 9999;
-
-  &::after {
-    position: absolute;
-    z-index: -1;
-    top: 65%;
-    right: -10px;
-    left: -10px;
-
-    height: 15px;
-
-    content: '';
-
-    background-color: $red;
-  }
-}
-.redlight {
-  background-color: $red;
-}
-
-.header_title {
-  font-size: 3.5em;
-
-  margin: 0 0 20px;
-
-  text-align: center;
-  letter-spacing: 2px;
-
-  .highlighted {
-    font-size: .7em;
-  }
-}
-
-button.link {
-  font-family: $saira;
-  font-size: 1.4em;
-
-  display: inline-block;
-
-  padding: 0;
-
-  text-decoration: none;
-  letter-spacing: 2px;
-
-  color: $white;
-  border: none;
-  background: none;
-
-  &:hover {
-    &::after {
-      top: -5px;
-
-      height: 36px;
-    }
-  }
-}
-
-.page {
-  display: none;
 }

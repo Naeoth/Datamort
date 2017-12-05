@@ -1,34 +1,35 @@
-#home {
+#search-content {
+  left: 200%;
+
+  .title-container {
+    width: 400px;
+    padding: 20px;
+  }
+
+  .page-title {
+    text-align: left;
+    span {
+      font-size: 1.2em;
+      line-height: 1.3em;
+
+      margin-left: 10px;
+    }
+
+    p {
+      font-size: 1.6em;
+      line-height: .9em;
+
+      margin-top: 80px;
+      margin-bottom: 0;
+    }
+  }
+
   .content-container {
     position: relative;
 
     width: 600px;
     height: 600px;
     padding: 20px;
-  }
-
-  .title-container {
-    width: 400px;
-    padding: 20px;
-
-    text-transform: uppercase;
-  }
-
-  .title {
-    p {
-      font-size: 3em;
-      line-height: .9em;
-
-      margin: 0;
-      margin-top: 80px;
-    }
-
-    span {
-      font-size: 1.5em;
-      line-height: 1.3em;
-
-      margin-left: 10px;
-    }
   }
 
   .present {
@@ -38,23 +39,45 @@
     text-align: justify;
   }
 
-  .form-icons {
-    width: 100px;
+  .form-data {
+    margin-right: 10px;
   }
 
-  .validateForm {
-    font-size: 2em;
-    font-weight: 600;
+  .form-sex {
+    width: 100px;
+    margin-top: 35px;
 
-    position: absolute;
-    bottom: 0;
+    input:checked + .sex-choice {
+      fill: $red;
+    }
+  }
+
+  #woman,
+  #man {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .sex-choice {
+    display: inline-block;
+
+    cursor: pointer;
+    transition: all .1s ease-in;
+
+    fill: $white;
 
     &:hover {
-      &::after {
-        top: -5px;
-
-        height: 43px;
-      }
+      fill: $grey-main;
     }
+
+    svg {
+      height: 100px;
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 0;
   }
 }
