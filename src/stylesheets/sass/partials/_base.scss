@@ -148,10 +148,6 @@
   &::placeholder {
     color: $white;
   }
-
-  &:hover {
-    color: $grey-main;
-  }
 }
 
 .select-container {
@@ -180,7 +176,7 @@
     display: block;
 
     width: 5px;
-    height: 160px;
+    height: 120px;
 
     content: '';
 
@@ -202,7 +198,7 @@
   overflow: auto;
 
   width: 100%;
-  max-height: 150px;
+  max-height: 110px;
   margin: 0;
   margin-top: 10px;
   padding-right: 20px;
@@ -271,10 +267,6 @@
   transition: all .1s ease-in;
 
   fill: $white;
-
-  &:hover {
-    fill: $grey-main;
-  }
 
   svg {
     height: 100px;
