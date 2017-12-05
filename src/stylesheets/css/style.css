@@ -571,19 +571,42 @@ template {
     height: 100px; }
 
 .diagram-double-bars {
-  width: 450px;
-  height: 30px; }
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 125%;
+  margin-left: 15%;
+  position: relative;
+  width: 350px;
+  height: 25px; }
 
 .diagram-left-bar,
 .diagram-right-bar {
-  display: inline-block;
-  height: 100%; }
+  position: absolute;
+  top: 0;
+  bottom: 0; }
 
 .diagram-left-bar {
-  background-color: #ec2323; }
+  left: 0;
+  background-color: #d11d1d; }
 
 .diagram-right-bar {
-  background-color: #fffefe; }
+  right: 0;
+  background-color: #fff; }
+
+.diagram-label,
+.diagram-total {
+  color: #fff; }
+
+.diagram-label {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  transform: translateX(-120%) translateY(-50%); }
+
+.diagram-total {
+  position: absolute;
+  top: -9px;
+  right: 0;
+  transform: translateX(120%) translateY(-50%); }
 
 .slider-simple,
 .slider-double {
@@ -697,6 +720,8 @@ template {
       line-height: .5em; }
   #result-content .content-container {
     margin-top: 50px; }
+  #result-content .diagram-double-bars {
+    margin-top: 25px; }
   #result-content .title {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 2.5em;
