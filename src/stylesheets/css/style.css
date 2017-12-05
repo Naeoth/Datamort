@@ -444,8 +444,27 @@ template {
 #search:target #search-content,
 #result:target #result-content,
 #map:target #map-content,
+#jpg1:target #jpg1-content,
+#jpg1:target #jpg2-content,
+#jpg1:target #jpg3-content,
+#jpg1:target #jpg4-content,
+#jpg1:target #jpg5-content,
+#jpg1:target #jpg6-content,
 #credits:target #credits-content {
   transform: translate3D(-200%, 0, 0); }
+
+#jpg1-content,
+#jpg2-content,
+#jpg3-content,
+#jpg4-content,
+#jpg5-content,
+#jpg6-content {
+  left: 200%; }
+
+.next-next {
+  position: absolute;
+  right: 50px;
+  bottom: 50px; }
 
 /* ----- TITLE ----- */
 .page-title {

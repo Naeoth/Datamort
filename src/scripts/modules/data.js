@@ -64,7 +64,6 @@ function getBiggestCallback(csv, age, sex, city, year) {
 }
 
 function getBiggest(sex, age, city) {
-  alert(age + " " + sex + " " + city)
   loadFile("data/morts-ville.csv", getBiggestCallback, age, sex, city, 2014 - 1979)
 }
 
