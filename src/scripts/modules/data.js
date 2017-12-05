@@ -47,9 +47,9 @@ function best(map) {
   var bestValue = 0
   for (var [key, valeur] of map) {
     if (valeur != "*") {
-      if (valeur > bestValue) {
+      if (parseInt(valeur) > bestValue) {
         bestIndex = key
-        bestValue = valeur
+        bestValue = parseInt(valeur)
       }
     }
   }
@@ -63,7 +63,8 @@ function getBiggestCallback(csv, age, sex, city, year) {
   getCategory(category(id))
 }
 
-function getBiggest(age, sex, city) {
+function getBiggest(sex, age, city) {
+  alert(age + " " + sex + " " + city)
   loadFile("data/morts-ville.csv", getBiggestCallback, age, sex, city, 2014 - 1979)
 }
 
