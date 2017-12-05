@@ -301,9 +301,9 @@
 .diagram-label {
   position: absolute;
   top: -9px;
-  left: 0;
+  left: -95%;
 
-  transform: translateX(-120%) translateY(-50%);
+  transform: translateY(-50%);
 }
 .diagram-total {
   position: absolute;

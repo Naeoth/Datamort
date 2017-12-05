@@ -86,209 +86,275 @@
                         </svg>
                       </label>
                     </form>
-                    <form class="form-city flex-item">
-                      <p class="input-container highlighted age">
-                        <input id="age" type="text" class="text-input" placeholder="Définissez votre âge">
+
+                    <!--  <form class="form-sex flex-item center">
+                      <input class="woman" type="radio" name="sex" value="F" />
+                      <label class="sex-choice" for="woman">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 409">
+                        <path d="M81.738,119.977c30.32,0,54.988-24.668,54.988-54.988C136.726,34.668,112.058,10,81.738,10 C51.418,10,26.75,34.668,26.75,64.989C26.75,95.313,51.418,119.977,81.738,119.977L81.738,119.977z M81.738,119.977" />
+                        <path d="M118.473,134.129H45.004L6.082,318.047L6,318.528h42.66v84.863h66.152v-84.863h42.661l-38.946-184.055L118.473,134.129z M118.473,134.129" />
+                      </svg>
+                    </label>
+                      <input class="man" type="radio" name="sex" value="M" />
+                      <label class="sex-choice" for="man">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.272 402.019">
+                        <path d="M65.598,116.126c30.32,0,54.984-24.668,54.984-54.988c0-30.321-24.664-54.989-54.984-54.989 c-30.324,0-54.992,24.668-54.992,54.989C10.605,91.458,35.273,116.126,65.598,116.126L65.598,116.126z M65.598,116.126" />
+                        <path d="M124.797,129.907L6.531,129.868L6.477,313.954l-0.078,0.481H32.52v84.863h66.152v-84.863h26.121L124.797,129.907z M124.797,129.907" />
+                      </svg>
+                    </label>
+                  </form> -->
+
+                  <form class="form-city flex-item">
+                    <p class="input-container highlighted age">
+                      <input id="age" type="text" class="text-input" placeholder="Définissez votre âge">
+                    </p>
+
+                    <div class="input-container select-container hide">
+                      <p class="select-input highlighted hide">
+                        Définissez votre ville
+                        <img src="assets/down-arrow.svg" alt="">
                       </p>
-
-                      <div class="input-container select-container hide">
-                        <p class="select-input highlighted hide">
-                          Définissez votre ville
-                          <img src="assets/down-arrow.svg" alt="">
-                        </p>
-                        <div class="hideScrollbar">
-                          <ul id="city" class="select-options city" selected="">
-                            <li class="select-option" data-value="4">Bordeaux</li>
-                            <li class="select-option" data-value="8">Lille</li>
-                            <li class="select-option" data-value="10">Lyon</li>
-                            <li class="select-option" data-value="2">Marseille</li>
-                            <li class="select-option" data-value="5">Montpellier</li>
-                            <li class="select-option" data-value="7">Nantes</li>
-                            <li class="select-option" data-value="1">Nice</li>
-                            <li class="select-option" data-value="0">Paris</li>
-                            <li class="select-option" data-value="6">Rennes</li>
-                            <li class="select-option" data-value="9">Strasbourg</li>
-                            <li class="select-option" data-value="3">Toulouse</li>
-                          </ul>
-                        </div>
+                      <div class="hideScrollbar">
+                        <ul id="city" class="select-options city" selected="">
+                          <li class="select-option" data-value="4">Bordeaux</li>
+                          <li class="select-option" data-value="8">Lille</li>
+                          <li class="select-option" data-value="10">Lyon</li>
+                          <li class="select-option" data-value="2">Marseille</li>
+                          <li class="select-option" data-value="5">Montpellier</li>
+                          <li class="select-option" data-value="7">Nantes</li>
+                          <li class="select-option" data-value="1">Nice</li>
+                          <li class="select-option" data-value="0">Paris</li>
+                          <li class="select-option" data-value="6">Rennes</li>
+                          <li class="select-option" data-value="9">Strasbourg</li>
+                          <li class="select-option" data-value="3">Toulouse</li>
+                        </ul>
                       </div>
-
-                      <a id="search-validate" href="#result" class="button highlighted">Valider</a>
-                    </form>
-                  </div>
-                </div>
-              </article>
-
-
-              <article id="result-content" class="page flex-container">
-                <div class="flex-item">
-                  <header>
-                    <h1 class="page-title">
-                      <span class="highlighted">VOUS ALLEZ MOURIR...</span>
-                    </h1>
-                  </header>
-
-                  <article class="content-container flex-container">
-                    <div class="flex-item left">
-                      <header class="title-container">
-                        <h2 class="title">
-                          <span id="title" class="redlight"></span>
-                        </h2>
-
-                      </header>
-                      <article>
-                        <p class="center"></p>
-                      </article>
-
-                      <p id="content" class="center"></p>
                     </div>
 
-                    <div id="diagram" class="flex-item right">
+                    <a id="search-validate" href="#result" class="button highlighted">Valider</a>
+                  </form>
+                </div>
+              </div>
+            </article>
+
+
+            <article id="result-content" class="page flex-container">
+              <div class="flex-item">
+                <header>
+                  <h1 class="page-title">
+                    <span class="highlighted">VOUS ALLEZ MOURIR...</span>
+                  </h1>
+                </header>
+
+                <article class="content-container flex-container">
+                  <div class="flex-item left">
+                    <header class="title-container">
+                      <h2 class="title">
+                        <span id="title" class="redlight"></span>
+                      </h2>
+
+                    </header>
+
+                    <p id="content" class="center"></p>
+                  </div>
+
+                  <div class="flex-item right">
+                    <div id="diagram">
+
+<!-- <div class="diagram-double-bars" data-label="Tuberculose" data-total="431"><p class="diagram-label"></p><p class="diagram-total"></p><div class="diagram-left-bar" data-value="51"></div><div class="diagram-right-bar" data-value="49"></div></div><div class="diagram-double-bars" data-label="Infection à méningocoques" data-total="24"><p class="diagram-label"></p><p class="diagram-total"></p><div class="diagram-left-bar" data-value="71"></div><div class="diagram-right-bar" data-value="29"></div></div><div class="diagram-double-bars" data-label="Hépatites virales" data-total="568"><p class="diagram-label"></p><p class="diagram-total"></p><div class="diagram-left-bar" data-value="56"></div><div class="diagram-right-bar" data-value="44"></div></div><div class="diagram-double-bars" data-label="Autres maladies infectieuses et parasitaires" data-total="8834"><p class="diagram-label"></p><p class="diagram-total"></p><div class="diagram-left-bar" data-value="46"></div><div class="diagram-right-bar" data-value="54"></div></div> -->
                       
-                      <div class="diagram-double-bars" data-label="1st" data-total="120">
-                          <p class="diagram-label">couille gauche</p>
-                          <div class="diagram-left-bar" data-value="45"></div>
-                          <div class="diagram-right-bar" data-value="55"></div>
-                        </div>
-                      
+<!-- 
+                      <div class="diagram-double-bars" data-label="1st" data-total="431">
+                       <p class="diagram-label">Tuberculose</p>
+                       <p class="diagram-total"></p>
+                       <div class="diagram-left-bar" data-value="51"></div>
+                       <div class="diagram-right-bar" data-value="49"></div>
+                     </div>
+                     <div class="diagram-double-bars" data-label="2nde" data-total="24">
+                       <p class="diagram-label">Infection à méningocoques</p>
+                       <p class="diagram-total"></p>
+                       <div class="diagram-left-bar" data-value="71"></div>
+                       <div class="diagram-right-bar" data-value="29"></div>
+                     </div>
+                     <div class="diagram-double-bars" data-label="3rd" data-total="568">
+                       <p class="diagram-label">Hépatites virales</p>
+                       <p class="diagram-total"></p>
+                       <div class="diagram-left-bar" data-value="56"></div>
+                       <div class="diagram-right-bar" data-value="44"></div>
+                     </div>
+                     <div class="diagram-double-bars" data-label="4th" data-total="8834">
+                       <p class="diagram-label">Autres maladies infectieuses et parasitaires</p>
+                       <p class="diagram-total"></p>
+                       <div class="diagram-left-bar" data-value="46"></div>
+                       <div class="diagram-right-bar" data-value="54"></div>
+                     </div> -->
+
+                     <!--  <div class="diagram-double-bars" data-label="1st" data-total="120">
+                       <p class="diagram-label">couille gauche</p>
+                       <p class="diagram-total"></p>
+                       <div class="diagram-left-bar" data-value="45"></div>
+                       <div class="diagram-right-bar" data-value="55"></div>
+                     </div>
+                     <div class="diagram-double-bars" data-label="2nde" data-total="125">
+                       <p class="diagram-label">couille droite</p>
+                       <p class="diagram-total"></p>
+                       <div class="diagram-left-bar" data-value="55"></div>
+                       <div class="diagram-right-bar" data-value="45"></div>
+                     </div>
+                     <div class="diagram-double-bars" data-label="3rd" data-total="300">
+                       <p class="diagram-label">tuberculose</p>
+                       <p class="diagram-total"></p>
+                       <div class="diagram-left-bar" data-value="65"></div>
+                       <div class="diagram-right-bar" data-value="35"></div>
+                     </div>
+                     <div class="diagram-double-bars" data-label="4th" data-total="10">
+                       <p class="diagram-label">tuberculose</p>
+                       <p class="diagram-total"></p>
+                       <div class="diagram-left-bar" data-value="55"></div>
+                       <div class="diagram-right-bar" data-value="45"></div>
+                     </div>
+                   -->
+
+
+                 </div>
+                 <a href="#map" class="button highlighted suite">Suite</a>
+               </div>
+             </article>
+           </div>
+         </article>
+
+
+         <article id="map-content" class="page flex-container">
+          <div class="flex-item">
+            <header>
+              <h1 class="page-title">
+                <span class="highlighted">Datamort</span>
+              </h1>
+            </header>
+
+            <div class="map-visualisation">
+              <img class="map-svg" src="assets/carte.svg">
+              <img src="assets/tdm_blanche.svg" class="city-svg rennes">
+              <img src="assets/tdm_blanche.svg" class="city-svg nantes">
+              <img src="assets/tdm_blanche.svg" class="city-svg paris">
+              <img src="assets/tdm_blanche.svg" class="city-svg lille">
+              <img src="assets/tdm_blanche.svg" class="city-svg strasbourg">
+              <img src="assets/tdm_blanche.svg" class="city-svg bordeaux">
+              <img src="assets/tdm_blanche.svg" class="city-svg lyon">
+              <img src="assets/tdm_blanche.svg" class="city-svg marseille">
+              <img src="assets/tdm_blanche.svg" class="city-svg montpellier">
+              <img src="assets/tdm_blanche.svg" class="city-svg nice">
+              <img src="assets/tdm_blanche.svg" class="city-svg toulouse">
+
+              <div class="map-form">
+                <p class="form-title saira">Datamort vous aide à trouver la ville où il fait bon mourir.</p>
+
+                <form class="form-sex flex-item center">
+                  <input id="woman" type="radio" name="sex" value="F" />
+                  <label class="sex-choice" for="woman">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 409">
+                      <path d="M81.738,119.977c30.32,0,54.988-24.668,54.988-54.988C136.726,34.668,112.058,10,81.738,10 C51.418,10,26.75,34.668,26.75,64.989C26.75,95.313,51.418,119.977,81.738,119.977L81.738,119.977z M81.738,119.977" />
+                      <path d="M118.473,134.129H45.004L6.082,318.047L6,318.528h42.66v84.863h66.152v-84.863h42.661l-38.946-184.055L118.473,134.129z M118.473,134.129" />
+                    </svg>
+                  </label>
+                  <input id="man" type="radio" name="sex" value="M" />
+                  <label class="sex-choice" for="man">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.272 402.019">
+                      <path d="M65.598,116.126c30.32,0,54.984-24.668,54.984-54.988c0-30.321-24.664-54.989-54.984-54.989 c-30.324,0-54.992,24.668-54.992,54.989C10.605,91.458,35.273,116.126,65.598,116.126L65.598,116.126z M65.598,116.126" />
+                      <path d="M124.797,129.907L6.531,129.868L6.477,313.954l-0.078,0.481H32.52v84.863h66.152v-84.863h26.121L124.797,129.907z M124.797,129.907" />
+                    </svg>
+                  </label>
+                </form>
+
+                <form class="form-age">
+                  <p class="highlighted">Ages</p>
+                  <div class="slider-double" data-start="5" data-end="99">
+                    <div class="slider-left-part"></div>
+                    <div class="slider-button min" data-value="20">
+                      <span class="slider-button-label"></span>
                     </div>
-                  </article>
-                </div>
-              </article>
-
-
-              <article id="map-content" class="page flex-container">
-                <div class="flex-item">
-                  <header>
-                    <h1 class="page-title">
-                      <span class="highlighted">Datamort</span>
-                    </h1>
-                  </header>
-
-                  <div class="map-visualisation">
-                    <img class="map-svg" src="assets/carte.svg">
-                    <img src="assets/tdm_blanche.svg" class="city-svg rennes">
-                    <img src="assets/tdm_blanche.svg" class="city-svg nantes">
-                    <img src="assets/tdm_blanche.svg" class="city-svg paris">
-                    <img src="assets/tdm_blanche.svg" class="city-svg lille">
-                    <img src="assets/tdm_blanche.svg" class="city-svg strasbourg">
-                    <img src="assets/tdm_blanche.svg" class="city-svg bordeaux">
-                    <img src="assets/tdm_blanche.svg" class="city-svg lyon">
-                    <img src="assets/tdm_blanche.svg" class="city-svg marseille">
-                    <img src="assets/tdm_blanche.svg" class="city-svg montpellier">
-                    <img src="assets/tdm_blanche.svg" class="city-svg nice">
-                    <img src="assets/tdm_blanche.svg" class="city-svg toulouse">
-
-                    <div class="map-form">
-                      <p class="form-title saira">Datamort vous aide à trouver la ville où il fait bon mourir.</p>
-
-                      <form class="form-sex flex-item center">
-                        <input id="woman" type="radio" name="sex" value="F" />
-                        <label class="sex-choice" for="woman">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 409">
-                            <path d="M81.738,119.977c30.32,0,54.988-24.668,54.988-54.988C136.726,34.668,112.058,10,81.738,10 C51.418,10,26.75,34.668,26.75,64.989C26.75,95.313,51.418,119.977,81.738,119.977L81.738,119.977z M81.738,119.977" />
-                            <path d="M118.473,134.129H45.004L6.082,318.047L6,318.528h42.66v84.863h66.152v-84.863h42.661l-38.946-184.055L118.473,134.129z M118.473,134.129" />
-                          </svg>
-                        </label>
-                        <input id="man" type="radio" name="sex" value="M" />
-                        <label class="sex-choice" for="man">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.272 402.019">
-                            <path d="M65.598,116.126c30.32,0,54.984-24.668,54.984-54.988c0-30.321-24.664-54.989-54.984-54.989 c-30.324,0-54.992,24.668-54.992,54.989C10.605,91.458,35.273,116.126,65.598,116.126L65.598,116.126z M65.598,116.126" />
-                            <path d="M124.797,129.907L6.531,129.868L6.477,313.954l-0.078,0.481H32.52v84.863h66.152v-84.863h26.121L124.797,129.907z M124.797,129.907" />
-                          </svg>
-                        </label>
-                      </form>
-
-                      <form class="form-age">
-                        <p class="highlighted">Ages</p>
-                        <div class="slider-double" data-start="5" data-end="99">
-                          <div class="slider-left-part"></div>
-                          <div class="slider-button min" data-value="20">
-                            <span class="slider-button-label"></span>
-                          </div>
-                          <div class="slider-middle-part"></div>
-                          <div class="slider-button max" data-value="40">
-                            <span class="slider-button-label"></span>
-                          </div>
-                          <div class="slider-right-part"></div>
-                        </div>
-                      </form>
-
-                      <div class="input-container select-container hide">
-                        <p class="select-input highlighted hide">
-                          Causes
-                          <img src="assets/down-arrow.svg" alt="">
-                        </p>
-                        <div class="hideScrollbar">
-                          <ul id="city" class="select-options city" selected="">
-                            <li class="select-option" data-value="4">Bordeaux</li>
-                            <li class="select-option" data-value="8">Lille</li>
-                            <li class="select-option" data-value="10">Lyon</li>
-                            <li class="select-option" data-value="2">Marseille</li>
-                            <li class="select-option" data-value="5">Montpellier</li>
-                            <li class="select-option" data-value="7">Nantes</li>
-                            <li class="select-option" data-value="1">Nice</li>
-                            <li class="select-option" data-value="0">Paris</li>
-                            <li class="select-option" data-value="6">Rennes</li>
-                            <li class="select-option" data-value="9">Strasbourg</li>
-                            <li class="select-option" data-value="3">Toulouse</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="slider-simple timeline" data-start="1990" data-end="2010">
-                        <div class="slider-left-part"></div>
-                        <div class="slider-button" data-value="2010">
-                          <span class="slider-button-label"></span>
-                        </div>
-                        <div class="slider-right-part"></div>
-
-                      </div>
-                      <a href="#credits" class="button highlighted credits">Credits</a>
+                    <div class="slider-middle-part"></div>
+                    <div class="slider-button max" data-value="40">
+                      <span class="slider-button-label"></span>
                     </div>
+                    <div class="slider-right-part"></div>
+                  </div>
+                </form>
+
+                <div class="input-container select-container hide">
+                  <p class="select-input highlighted hide">
+                    Causes
+                    <img src="assets/down-arrow.svg" alt="">
+                  </p>
+                  <div class="hideScrollbar">
+                    <ul id="city" class="select-options city" selected="">
+                      <li class="select-option" data-value="4">Bordeaux</li>
+                      <li class="select-option" data-value="8">Lille</li>
+                      <li class="select-option" data-value="10">Lyon</li>
+                      <li class="select-option" data-value="2">Marseille</li>
+                      <li class="select-option" data-value="5">Montpellier</li>
+                      <li class="select-option" data-value="7">Nantes</li>
+                      <li class="select-option" data-value="1">Nice</li>
+                      <li class="select-option" data-value="0">Paris</li>
+                      <li class="select-option" data-value="6">Rennes</li>
+                      <li class="select-option" data-value="9">Strasbourg</li>
+                      <li class="select-option" data-value="3">Toulouse</li>
+                    </ul>
                   </div>
                 </div>
-              </article>
 
-
-              <article id="credits-content" class="page flex-container">
-                <div class="flex-item">
-                  <header>
-                    <h1 class="page-title">
-                      <span class="highlighted">D'où viennent ces données ?</span><br>
-                    </h1>
-                  </header>
-
-                  <div class="content-container center">
-                    <p>Depuis un siècle, le CépiDc, Centre d’épidémiologie sur les causes médicales de décès, branche de l’Inserm, Institut national de la santé et de la recherche médicale, produit des statistiques sur les causes médicales de décès en France.
-                    Le CépiDc utilise la classification établie par l’organisation mondiale de la santé.</p>
-                    <p>Les données sont constituées à partir des certificats de décès établis par les médecins. 74% des morts en France surviennent dans des établissements médicaux (dont six sur dix à l’hôpital, donc plutôt en ville) et 26% seulement au
-                    domicile.</p>
-                    <p>Le médecin qui rédige le certificat prend en compte la cause réelle du décès et la cause initiale. La plus prégnante est privilégiée : un décès par arrêt cardiaque des suites d’un cancer sera ainsi comptabilisé dans la catégorie cancer.</p>
-                    <p>Un dernier biais concerne la catégorie suicide qui est probablement sous-estimée dans les statistiques. Puisqu’un décès constaté comme suicide doit obligatoirement faire l’objet d’une enquête, il est probable que certains certificats
-                    restent vagues pour épargner des difficultés aux familles.</p>
+                <div class="slider-simple timeline" data-start="1990" data-end="2010">
+                  <div class="slider-left-part"></div>
+                  <div class="slider-button" data-value="2010">
+                    <span class="slider-button-label"></span>
                   </div>
+                  <div class="slider-right-part"></div>
 
-                  <footer>
-                    <div class="logos">
-                      <img src="assets/INSA.svg" class="logo">
-                      <img src="assets/Science_po.svg" class="logo">
-                      <img src="assets/LISAA.svg" class="logo">
-                      <img src="assets/médiacité.svg" class="logo">
-                      <img src="assets/ouest_média_lab.svg" class="logo">
-                      <img src="assets/r.svg" class="logo">
-                      <img src="assets/ille_et_vilaine.svg" class="logo">
-                    </div>
-
-                    <h3 class="names">INSA : Alexis Busseneau, Landry Trebon, et Mathieu Lochet Paul Bivic ; Sciences Po : Martin Dumas Primbault et Nina Pareja ; LISAA : Arnaud Mahé et Morgane Tessier</h3>
-                  </footer>
                 </div>
-              </article>
-            </section>
-          </section>
-        </section>
+                <a href="#credits" class="button highlighted credits">Credits</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article id="credits-content" class="page flex-container">
+          <div class="flex-item">
+            <header>
+              <h1 class="page-title">
+                <span class="highlighted">D'où viennent ces données</span><br>
+              </h1>
+            </header>
+
+            <div class="content-container center">
+              <p>Depuis un siècle, le CépiDc, Centre d’épidémiologie sur les causes médicales de décès, branche de l’Inserm, Institut national de la santé et de la recherche médicale, produit des statistiques sur les causes médicales de décès en France.
+              Le CépiDc utilise la classification établie par l’organisation mondiale de la santé.</p>
+              <p>Les données sont constituées à partir des certificats de décès établis par les médecins. 74% des morts en France surviennent dans des établissements médicaux (dont six sur dix à l’hôpital, donc plutôt en ville) et 26% seulement au
+              domicile.</p>
+              <p>Le médecin qui rédige le certificat prend en compte la cause réelle du décès et la cause initiale. La plus prégnante est privilégiée : un décès par arrêt cardiaque des suites d’un cancer sera ainsi comptabilisé dans la catégorie cancer.</p>
+              <p>Un dernier biais concerne la catégorie suicide qui est probablement sous-estimée dans les statistiques. Puisqu’un décès constaté comme suicide doit obligatoirement faire l’objet d’une enquête, il est probable que certains certificats
+              restent vagues pour épargner des difficultés aux familles.</p>
+            </div>
+
+            <footer>
+              <div class="logos">
+                <img src="assets/INSA.svg" class="logo">
+                <img src="assets/Science_po.svg" class="logo">
+                <img src="assets/LISAA.svg" class="logo">
+                <img src="assets/médiacité.svg" class="logo">
+                <img src="assets/ouest_média_lab.svg" class="logo">
+                <img src="assets/r.svg" class="logo">
+                <img src="assets/ille_et_vilaine.svg" class="logo">
+              </div>
+              <h3 class="names">INSA : Alexis Busseneau, Landry Trebon, et Mathieu Lochet Paul Bivic ; Sciences Po : Martin Dumas Primbault et Nina Pareja ; LISAA : Arnaud Mahé et Morgane Tessier</h3>
+            </footer>
+          </div>
+        </article>
       </section>
     </section>
+  </section>
+</section>
+</section>
 
     <!-- <section id="result" class="flex-container page">
       
@@ -300,8 +366,8 @@
   <!-- build:js scripts/main.min.js -->
   <script src="scripts/main.js"></script>
   <script src="scripts/modules/select-input.js"></script>
-  <script src="scripts/modules/data.js"></script>
   <script src="scripts/modules/diagram-slider.js"></script>
+  <script src="scripts/modules/data.js"></script>
   <!-- endbuild -->
 </body>
 
