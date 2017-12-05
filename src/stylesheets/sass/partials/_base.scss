@@ -277,20 +277,26 @@
 
 
 .diagram-double-bars {
+  position: relative;
+
   width: 450px;
   height: 30px;
 }
 .diagram-left-bar,
 .diagram-right-bar {
-  display: inline-block;
-
-  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 .diagram-left-bar {
-  background-color: $red;
+  left: 0;
+
+  background-color: #d11d1d;
 }
 .diagram-right-bar {
-  background-color: $white;
+  right: 0;
+
+  background-color: #fff;
 }
 
 .slider-simple,
