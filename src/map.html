@@ -98,7 +98,48 @@
 
                       <form class="form-age">
                         <p class="highlighted">Ages</p>
+                        <div class="slider-double" data-start="5" data-end="99">
+                          <div class="slider-left-part"></div>
+                          <div class="slider-button min" data-value="20">
+                            <span class="slider-button-label"></span>
+                          </div>
+                          <div class="slider-middle-part"></div>
+                          <div class="slider-button max" data-value="40">
+                            <span class="slider-button-label"></span>
+                          </div>
+                          <div class="slider-right-part"></div>
+                        </div>
                       </form>
+
+                      <div class="input-container select-container hide">
+                        <p class="select-input highlighted hide">
+                          Causes
+                          <img src="assets/down-arrow.svg" alt="">
+                        </p>
+                        <div class="hideScrollbar">
+                          <ul id="city" class="select-options city" selected="">
+                            <li class="select-option" data-value="4">Bordeaux</li>
+                            <li class="select-option" data-value="8">Lille</li>
+                            <li class="select-option" data-value="10">Lyon</li>
+                            <li class="select-option" data-value="2">Marseille</li>
+                            <li class="select-option" data-value="5">Montpellier</li>
+                            <li class="select-option" data-value="7">Nantes</li>
+                            <li class="select-option" data-value="1">Nice</li>
+                            <li class="select-option" data-value="0">Paris</li>
+                            <li class="select-option" data-value="6">Rennes</li>
+                            <li class="select-option" data-value="9">Strasbourg</li>
+                            <li class="select-option" data-value="3">Toulouse</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="slider-simple timeline" data-start="1990" data-end="2010">
+                        <div class="slider-left-part"></div>
+                        <div class="slider-button" data-value="2010">
+                          <span class="slider-button-label"></span>
+                        </div>
+                        <div class="slider-right-part"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -116,6 +157,7 @@
   <!-- build:js scripts/main.min.js -->
   <script src="scripts/main.js"></script>
   <script src="scripts/modules/select-input.js"></script>
+  <script src="scripts/modules/diagram-slider.js"></script>
   <!-- endbuild -->
 </body>
 

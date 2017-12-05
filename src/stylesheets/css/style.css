@@ -443,6 +443,7 @@ template {
 
 #search:target #search-content,
 #result:target #result-content,
+#map:target #map-content,
 #credits:target #credits-content {
   transform: translate3D(-200%, 0, 0); }
 
@@ -611,10 +612,14 @@ template {
 
 .slider-simple,
 .slider-double {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   position: relative;
-  width: 450px;
-  height: 6px;
-  margin-top: 50px; }
+  width: 250px;
+  height: 4px;
+  margin-top: 20px;
+  background-color: green; }
 
 .slider-left-part,
 .slider-right-part,
@@ -653,7 +658,7 @@ template {
 
 .slider-button-label {
   position: absolute;
-  top: -20px;
+  top: -25px;
   left: 50%;
   user-select: none;
   transform: translateX(-50%);
@@ -734,82 +739,96 @@ template {
     width: 500px;
     padding: 20px; }
 
-#map-content .map-visualisation {
-  position: relative;
-  width: 1200px;
-  height: 800px;
-  background-color: #232323; }
-
-#map-content .map-form .form-title {
-  font-family: "Saira Extra Condensed", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  width: 280px; }
-
-#map-content .map-form .form-sex {
-  position: absolute;
-  top: 200px;
-  left: 100px; }
-  #map-content .map-form .form-sex svg {
-    height: 80px; }
-
-#map-content .map-form .form-age {
-  font-family: "Saira Extra Condensed", sans-serif;
-  font-size: 26px;
-  font-weight: 500;
-  position: absolute;
-  top: 350px;
-  left: 110px; }
-  #map-content .map-form .form-age p {
-    display: inline-block; }
-
-#map-content .map-svg {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  width: 600px;
-  transform: translateX(-50%) translateY(-50%); }
-
-#map-content .city-svg {
-  position: absolute;
-  width: 20px;
-  transform: translateX(-50%) translateY(-50%); }
-  #map-content .city-svg.rennes {
-    top: 265px;
-    left: 450px; }
-  #map-content .city-svg.nantes {
-    top: 325px;
-    left: 460px; }
-  #map-content .city-svg.paris {
-    top: 220px;
-    left: 630px; }
-  #map-content .city-svg.lille {
-    top: 95px;
-    left: 645px; }
-  #map-content .city-svg.strasbourg {
-    top: 230px;
-    left: 865px; }
-  #map-content .city-svg.bordeaux {
-    top: 470px;
-    left: 490px; }
-  #map-content .city-svg.montpellier {
-    top: 570px;
-    left: 705px; }
-  #map-content .city-svg.marseille {
-    top: 585px;
-    left: 775px; }
-  #map-content .city-svg.nice {
-    top: 550px;
-    left: 860px; }
-  #map-content .city-svg.lyon {
-    top: 430px;
-    left: 755px; }
-  #map-content .city-svg.toulouse {
-    top: 555px;
-    left: 585px; }
+#map-content {
+  left: 200%; }
+  #map-content .map-visualisation {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    user-select: none; }
+    #map-content .map-visualisation .select-container {
+      position: absolute;
+      top: 520px;
+      left: 110px; }
+      #map-content .map-visualisation .select-container .select-input {
+        width: 240px; }
+  #map-content .map-form .form-title {
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 250px;
+    user-select: none; }
+  #map-content .map-form .form-sex {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    user-select: none; }
+    #map-content .map-form .form-sex svg {
+      height: 80px; }
+  #map-content .map-form .form-age {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    position: absolute;
+    top: 350px;
+    left: 110px; }
+    #map-content .map-form .form-age p {
+      display: inline-block;
+      user-select: none; }
+  #map-content .map-svg {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 600px;
+    user-select: none;
+    transform: translateX(-50%) translateY(-50%); }
+  #map-content .city-svg {
+    position: absolute;
+    width: 20px;
+    cursor: pointer;
+    user-select: none;
+    transform: translateX(-50%) translateY(-50%); }
+    #map-content .city-svg.rennes {
+      top: 265px;
+      left: 450px; }
+    #map-content .city-svg.nantes {
+      top: 325px;
+      left: 460px; }
+    #map-content .city-svg.paris {
+      top: 220px;
+      left: 630px; }
+    #map-content .city-svg.lille {
+      top: 95px;
+      left: 645px; }
+    #map-content .city-svg.strasbourg {
+      top: 230px;
+      left: 865px; }
+    #map-content .city-svg.bordeaux {
+      top: 470px;
+      left: 490px; }
+    #map-content .city-svg.montpellier {
+      top: 570px;
+      left: 705px; }
+    #map-content .city-svg.marseille {
+      top: 585px;
+      left: 775px; }
+    #map-content .city-svg.nice {
+      top: 550px;
+      left: 860px; }
+    #map-content .city-svg.lyon {
+      top: 430px;
+      left: 755px; }
+    #map-content .city-svg.toulouse {
+      top: 555px;
+      left: 585px; }
+  #map-content .timeline {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 900px;
+    transform: translateX(-50%); }
 
 #credits-content {
   left: 200%; }

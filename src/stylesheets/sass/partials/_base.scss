@@ -83,6 +83,7 @@
 
 #search:target #search-content,
 #result:target #result-content,
+#map:target #map-content,
 #credits:target #credits-content {
   transform: translate3D(-200%, 0, 0);
 }
@@ -325,11 +326,17 @@
 
 .slider-simple,
 .slider-double {
+  font-family: $saira;
+  font-size: 18px;
+  font-weight: 400;
+
   position: relative;
 
-  width: 450px;
-  height: 6px;
-  margin-top: 50px;
+  width: 250px;
+  height: 4px;
+  margin-top: 20px;
+
+  background-color: green;
 }
 .slider-left-part,
 .slider-right-part,
@@ -373,7 +380,7 @@
 }
 .slider-button-label {
   position: absolute;
-  top: -20px;
+  top: -25px;
   left: 50%;
 
   user-select: none;
